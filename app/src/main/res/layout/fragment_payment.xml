@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/paymentsPageHeading"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+
+        android:text="Current Balance"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:textFontWeight="600"
+        android:textSize="20sp"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+
+        app:layout_constraintTop_toTopOf="@id/paymentsPageHeading"
+        app:layout_constraintBottom_toBottomOf="@id/paymentsPageHeading"
+
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="30dp"
+
+        android:src="@drawable/plus_icon"
+        app:tint="@color/black"
+        android:clickable="true"
+        android:onClick="goToPaymentInitialization"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amountInWallet"
+
+        app:layout_constraintTop_toBottomOf="@id/paymentsPageHeading"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="24dp"
+        android:text="$25.56"
+        android:textSize="36sp"
+        android:textColor="#0C922F"
+        android:fontFamily="@font/sfprodisplayregular"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pendingPaymentHeading"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/amountInWallet"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+
+        android:text="Payments"
+        android:textSize="18sp"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:textFontWeight="700"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pendingPaymentHeading"
+        app:layout_constraintBottom_toBottomOf="@id/pendingPaymentHeading"
+        android:layout_marginRight="20dp"
+        android:textColor="#040ADE"
+
+        android:text="View More"
+        android:textSize="14sp"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:textFontWeight="700"
+        android:visibility="invisible"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/pendingPaymentHeading"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/pendingPaymentHeading"
+
+        />
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
