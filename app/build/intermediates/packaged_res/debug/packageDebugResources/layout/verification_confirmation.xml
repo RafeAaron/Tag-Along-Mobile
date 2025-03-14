@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/verificationConfirmationMain"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verificationConfirmationHeading"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:text="Mr. Mugisha Allen"
+        android:textSize="24sp"
+        android:fontFamily="@font/sfprodisplayregular"
+
+        android:layout_marginTop="30dp"
+
+        />
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:id="@+id/backArrowVerification"
+
+        app:layout_constraintTop_toTopOf="@id/verificationConfirmationHeading"
+        app:layout_constraintBottom_toBottomOf="@id/verificationConfirmationHeading"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+
+        android:src="@drawable/back_arrow"
+        app:tint="@color/black"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:onClick="goToHomePageFromVerification"
+
+        />
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/verifiedProfilePicture"
+
+        app:layout_constraintTop_toBottomOf="@id/verificationConfirmationHeading"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/profile_picture"
+        android:scaleType="fitXY"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verifiedProfilePicture"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Car Type: Mercedes Benz"
+            android:textSize="20sp"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:textFontWeight="500"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:text="Car Model: 2024"
+            android:textSize="20sp"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:textFontWeight="500"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:text="Make: Roofless"
+            android:textSize="20sp"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:textFontWeight="500"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:text="Rating: 3.8"
+            android:textSize="20sp"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:textFontWeight="500"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:text="Number Of Bookings: 383"
+            android:textSize="20sp"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:textFontWeight="500"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:text="Plate Number: UAR 594R"
+            android:textSize="20sp"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:textFontWeight="500"
+
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

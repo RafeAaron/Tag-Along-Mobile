@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/activity_sign_in.xml",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/activity_sign_in.xml"
+    },
+    {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/fragment_first.xml",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/fragment_first.xml"
+    },
+    {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/activity_payment_confirmation_success.xml",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/activity_payment_confirmation_success.xml"
+    },
+    {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/activity_reset_code.xml",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/activity_reset_code.xml"
+    },
+    {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/fragment_home.xml",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/verification_confirmation.xml",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/verification_confirmation.xml"
+    },
+    {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/activity_main.xml",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/activity_home_main.xml",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/activity_home_main.xml"
+    },
+    {
+        "merged": "com.example.tagalong.app-mergeDebugResources-42:/layout/activity_payment_initialization.xml",
+        "source": "com.example.tagalong.app-main-45:/layout/activity_payment_initialization.xml"
+    },
+    {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/activity_sign_up.xml",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/activity_sign_up.xml"
+    },
+    {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/fragment_payment.xml",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/fragment_payment.xml"
+    },
+    {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/activity_payment_initialization.xml",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/activity_payment_initialization.xml"
+    },
+    {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/fragment_verification.xml",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/fragment_verification.xml"
+    },
+    {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/activity_reset_code_confirmation.xml",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/activity_reset_code_confirmation.xml"
+    },
+    {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/content_payment_initialization.xml",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/content_payment_initialization.xml"
+    },
+    {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/fragment_second.xml",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/fragment_second.xml"
+    }
+]

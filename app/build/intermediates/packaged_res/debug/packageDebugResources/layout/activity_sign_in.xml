@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_in">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signInHeading"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+
+        android:text="@string/signInHeading"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:fontFamily="@font/sfprodisplayregular"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signInSub"
+
+        app:layout_constraintTop_toBottomOf="@id/signInHeading"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+
+        android:text="@string/signInSubHeading"
+        android:textSize="18sp"
+
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:id="@+id/username"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signInSub"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:hint="\@rafeAaron23"
+        android:textSize="20sp"
+        android:background="@drawable/edit_text_border"
+
+        android:paddingLeft="20dp"
+
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:id="@+id/signInPassword"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:layout_marginTop="10dp"
+        android:hint="********"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_border"
+        android:textSize="20sp"
+        android:shadowDy="0"
+        android:shadowDx="0"
+
+        android:paddingLeft="20dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        app:layout_constraintLeft_toLeftOf="@id/signInPassword"
+        app:layout_constraintTop_toBottomOf="@id/signInPassword"
+
+        android:layout_marginTop="20dp"
+        android:text="Forgot Password?"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:textColor="#0000F4"
+
+        android:clickable="true"
+        android:onClick="goToResetEmailPage"
+
+
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:id="@+id/signInBtn"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_shape"
+
+        android:fontFamily="@font/sfprodisplayregular"
+        android:textSize="20sp"
+        android:text="Sign In"
+        android:onClick="goToHomePage"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/signInBtn"
+        android:layout_marginBottom="5dp"
+
+        android:text="Don't have an account yet? Sign up"
+        android:textColor="#0000F4"
+        android:clickable="true"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:onClick="goToSignUpPage"
+
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeMain">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/fragmentHolder"
+
+        app:layout_constraintBottom_toTopOf="@id/navigationDrawer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/navigationDrawer"
+        android:background="#D9d9d9"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/home_icon"
+            android:id="@+id/homeIcon"
+            android:contentDescription="Home Icon"
+            android:background="@android:color/transparent"
+            app:tint="@color/black"
+            android:onClick="chooseFragment"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/verification"
+            android:id="@+id/verificationIcon"
+            android:background="@android:color/transparent"
+            app:tint="@color/black"
+            android:contentDescription="Verify Icon"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:onClick="chooseFragment"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/paymentIcon"
+            android:contentDescription="Wallet Icon"
+            android:src="@drawable/wallet_icon"
+            android:background="@android:color/transparent"
+            app:tint="@color/black"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:onClick="chooseFragment"
+
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
