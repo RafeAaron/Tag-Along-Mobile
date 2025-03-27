@@ -4,7 +4,7 @@
             "outputFile": "com.example.tagalong.app-mergeDebugResources-41:/values/values.xml",
             "map": [
                 {
-                    "source": "/home/rafeaaron/AndroidStudioProjects/TagAlong/app/src/main/res/values/strings.xml",
+                    "source": "/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "1,13,11,18,15,16,5,6,9,14,2,3,4,7",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -20,6 +20,23 @@
                         "endLines": "1998,2025,2026,2065,2174,2180,2181,2182,2183,2190,2193,2194,2195,2196",
                         "endColumns": "45,63,69,13,37,45,59,123,114,65,85,71,85,71",
                         "endOffsets": "131988,134864,134934,138445,154159,155007,155067,155191,155306,155933,156367,156439,156525,156597"
+                    }
+                },
+                {
+                    "source": "/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/res/values/dimens.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "6",
+                        "startOffsets": "18",
+                        "endColumns": "43",
+                        "endOffsets": "55"
+                    },
+                    "to": {
+                        "startLines": "1116",
+                        "startColumns": "4",
+                        "startOffsets": "66597",
+                        "endColumns": "41",
+                        "endOffsets": "66634"
                     }
                 },
                 {
@@ -59,23 +76,6 @@
                     }
                 },
                 {
-                    "source": "/home/rafeaaron/AndroidStudioProjects/TagAlong/app/src/main/res/values/colors.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,97",
-                        "endColumns": "41,41",
-                        "endOffsets": "92,134"
-                    },
-                    "to": {
-                        "startLines": "652,971",
-                        "startColumns": "4,4",
-                        "startOffsets": "33327,57003",
-                        "endColumns": "41,41",
-                        "endOffsets": "33364,57040"
-                    }
-                },
-                {
                     "source": "/home/rafeaaron/.gradle/caches/8.10.2/transforms/3a80700ecfec09cee95af5402489d3bf/transformed/viewpager2-1.0.0/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -92,6 +92,23 @@
                         "endLines": "13815",
                         "endColumns": "24",
                         "endOffsets": "813617"
+                    }
+                },
+                {
+                    "source": "/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/res/values/app_logo_background.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "53",
+                        "endOffsets": "104"
+                    },
+                    "to": {
+                        "startLines": "647",
+                        "startColumns": "4",
+                        "startOffsets": "32954",
+                        "endColumns": "53",
+                        "endOffsets": "33003"
                     }
                 },
                 {
@@ -130,25 +147,6 @@
                         "endLines": "1836,9435,12580,12586",
                         "endColumns": "52,24,24,24",
                         "endOffsets": "121961,651013,768609,768851"
-                    }
-                },
-                {
-                    "source": "/home/rafeaaron/AndroidStudioProjects/TagAlong/app/src/main/res/values/themes.xml",
-                    "from": {
-                        "startLines": "2,7",
-                        "startColumns": "4,4",
-                        "startOffsets": "100,323",
-                        "endLines": "5,7",
-                        "endColumns": "12,64",
-                        "endOffsets": "317,383"
-                    },
-                    "to": {
-                        "startLines": "2624,6612",
-                        "startColumns": "4,4",
-                        "startOffsets": "184790,464461",
-                        "endLines": "2627,6612",
-                        "endColumns": "12,63",
-                        "endOffsets": "184901,464520"
                     }
                 },
                 {
@@ -336,23 +334,6 @@
                     }
                 },
                 {
-                    "source": "/home/rafeaaron/AndroidStudioProjects/TagAlong/app/src/main/res/values/app_logo_background.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "53",
-                        "endOffsets": "104"
-                    },
-                    "to": {
-                        "startLines": "647",
-                        "startColumns": "4",
-                        "startOffsets": "32954",
-                        "endColumns": "53",
-                        "endOffsets": "33003"
-                    }
-                },
-                {
                     "source": "/home/rafeaaron/.gradle/caches/8.10.2/transforms/59189e6277d1351df02a933272d38210/transformed/window-1.0.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,7,8,9,10,11,19,23,34,51",
@@ -389,20 +370,22 @@
                     }
                 },
                 {
-                    "source": "/home/rafeaaron/AndroidStudioProjects/TagAlong/app/src/main/res/values/dimens.xml",
+                    "source": "/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/res/values/themes.xml",
                     "from": {
-                        "startLines": "1",
-                        "startColumns": "6",
-                        "startOffsets": "18",
-                        "endColumns": "43",
-                        "endOffsets": "55"
+                        "startLines": "2,7",
+                        "startColumns": "4,4",
+                        "startOffsets": "100,323",
+                        "endLines": "5,7",
+                        "endColumns": "12,64",
+                        "endOffsets": "317,383"
                     },
                     "to": {
-                        "startLines": "1116",
-                        "startColumns": "4",
-                        "startOffsets": "66597",
-                        "endColumns": "41",
-                        "endOffsets": "66634"
+                        "startLines": "2624,6612",
+                        "startColumns": "4,4",
+                        "startOffsets": "184790,464461",
+                        "endLines": "2627,6612",
+                        "endColumns": "12,63",
+                        "endOffsets": "184901,464520"
                     }
                 },
                 {
@@ -477,6 +460,23 @@
                         "endLines": "35,663,664,665,666,1054,1055,1056,2251,5605,5608,5611,10335",
                         "endColumns": "51,60,61,61,63,58,56,53,12,12,12,12,24",
                         "endOffsets": "1687,34197,34259,34321,34385,62613,62670,62724,160394,394440,394566,394694,682097"
+                    }
+                },
+                {
+                    "source": "/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,97",
+                        "endColumns": "41,41",
+                        "endOffsets": "92,134"
+                    },
+                    "to": {
+                        "startLines": "652,971",
+                        "startColumns": "4,4",
+                        "startOffsets": "33327,57003",
+                        "endColumns": "41,41",
+                        "endOffsets": "33364,57040"
                     }
                 },
                 {

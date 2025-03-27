@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payments.WalletDeposit">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+
+        android:id="@+id/backArrowWalletDeposit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="24dp"
+
+        android:src="@drawable/back_arrow"
+        app:tint="@color/black"
+
+        android:onClick="goBackToPaymentInitialization"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/depositIntoWalletHeading"
+
+        app:layout_constraintBottom_toBottomOf="@id/backArrowWalletDeposit"
+        app:layout_constraintTop_toTopOf="@id/backArrowWalletDeposit"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/backArrowWalletDeposit"
+        android:layout_marginLeft="-44dp"
+
+        android:textSize="24sp"
+        android:text="Deposit Into Wallet"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:textFontWeight="700"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/amountToAdd"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/depositIntoWalletHeading"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:text="5400"
+        android:textSize="40sp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/currencyText"
+
+        app:layout_constraintRight_toLeftOf="@id/amountToAdd"
+        app:layout_constraintBottom_toBottomOf="@id/amountToAdd"
+        app:layout_constraintTop_toTopOf="@id/amountToAdd"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:textSize="20sp"
+        android:text="UGX"
+        android:textFontWeight="600"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/choosePaymentMethodHeading"
+
+        app:layout_constraintTop_toBottomOf="@id/amountToAdd"
+        app:layout_constraintLeft_toLeftOf="@id/backArrowWalletDeposit"
+        android:text="Choose Payment Method"
+        android:textSize="16sp"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:textFontWeight="700"
+        android:layout_marginTop="30dp"
+
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/paymentMethodOptions"
+
+        app:layout_constraintTop_toBottomOf="@id/choosePaymentMethodHeading"
+        app:layout_constraintLeft_toLeftOf="@id/backArrowWalletDeposit"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="MTN Mobile Money"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:textFontWeight="500"
+
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Airtel Money"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:textFontWeight="500"
+
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Bank Card"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:textFontWeight="500"
+
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Pay Pal"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:textFontWeight="500"
+
+            />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/additionalPaymentDetailsHeading"
+
+        app:layout_constraintTop_toBottomOf="@id/paymentMethodOptions"
+        app:layout_constraintLeft_toLeftOf="@id/backArrowWalletDeposit"
+        android:text="Enter MTN Mobile Money Number"
+        android:textFontWeight="600"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:layout_marginTop="15dp"
+
+        />
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/paymentOptionsAdditionalDetailOne"
+
+        app:layout_constraintTop_toBottomOf="@id/additionalPaymentDetailsHeading"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="0773774641"
+        android:paddingLeft="15dp"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:textFontWeight="500"
+
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+
+        android:background="@drawable/button_shape"
+
+        android:text="Initiate Deposit"
+        android:textSize="20sp"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:textFontWeight="600"
+        android:onClick="goToDepositIntoWalletConfirmation"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

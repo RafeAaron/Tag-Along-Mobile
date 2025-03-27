@@ -22,6 +22,9 @@ public final class ActivityHomeMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final ImageButton bookingIcon;
+
+  @NonNull
   public final FrameLayout fragmentHolder;
 
   @NonNull
@@ -29,6 +32,9 @@ public final class ActivityHomeMainBinding implements ViewBinding {
 
   @NonNull
   public final ConstraintLayout main;
+
+  @NonNull
+  public final ImageButton mapIcon;
 
   @NonNull
   public final LinearLayout navigationDrawer;
@@ -40,13 +46,16 @@ public final class ActivityHomeMainBinding implements ViewBinding {
   public final ImageButton verificationIcon;
 
   private ActivityHomeMainBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FrameLayout fragmentHolder, @NonNull ImageButton homeIcon,
-      @NonNull ConstraintLayout main, @NonNull LinearLayout navigationDrawer,
-      @NonNull ImageButton paymentIcon, @NonNull ImageButton verificationIcon) {
+      @NonNull ImageButton bookingIcon, @NonNull FrameLayout fragmentHolder,
+      @NonNull ImageButton homeIcon, @NonNull ConstraintLayout main, @NonNull ImageButton mapIcon,
+      @NonNull LinearLayout navigationDrawer, @NonNull ImageButton paymentIcon,
+      @NonNull ImageButton verificationIcon) {
     this.rootView = rootView;
+    this.bookingIcon = bookingIcon;
     this.fragmentHolder = fragmentHolder;
     this.homeIcon = homeIcon;
     this.main = main;
+    this.mapIcon = mapIcon;
     this.navigationDrawer = navigationDrawer;
     this.paymentIcon = paymentIcon;
     this.verificationIcon = verificationIcon;
@@ -79,6 +88,12 @@ public final class ActivityHomeMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.booking_icon;
+      ImageButton bookingIcon = ViewBindings.findChildViewById(rootView, id);
+      if (bookingIcon == null) {
+        break missingId;
+      }
+
       id = R.id.fragmentHolder;
       FrameLayout fragmentHolder = ViewBindings.findChildViewById(rootView, id);
       if (fragmentHolder == null) {
@@ -92,6 +107,12 @@ public final class ActivityHomeMainBinding implements ViewBinding {
       }
 
       ConstraintLayout main = (ConstraintLayout) rootView;
+
+      id = R.id.mapIcon;
+      ImageButton mapIcon = ViewBindings.findChildViewById(rootView, id);
+      if (mapIcon == null) {
+        break missingId;
+      }
 
       id = R.id.navigationDrawer;
       LinearLayout navigationDrawer = ViewBindings.findChildViewById(rootView, id);
@@ -111,8 +132,8 @@ public final class ActivityHomeMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityHomeMainBinding((ConstraintLayout) rootView, fragmentHolder, homeIcon,
-          main, navigationDrawer, paymentIcon, verificationIcon);
+      return new ActivityHomeMainBinding((ConstraintLayout) rootView, bookingIcon, fragmentHolder,
+          homeIcon, main, mapIcon, navigationDrawer, paymentIcon, verificationIcon);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

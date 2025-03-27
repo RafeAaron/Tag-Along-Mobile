@@ -28,28 +28,61 @@
         android:testOnly="true"
         android:theme="@style/Theme.TagAlong" >
         <activity
-            android:name="com.example.tagalong.paymentConfirmationSuccess"
+            android:name="com.example.tagalong.Profile.ProfileChangeConfirmation"
             android:exported="false" />
         <activity
-            android:name="com.example.tagalong.PaymentInitialization"
+            android:name="com.example.tagalong.BookARide.BookARideConfirmation"
             android:exported="false" />
         <activity
-            android:name="com.example.tagalong.HomeMain"
+            android:name="com.example.tagalong.StartRide.StartARideConfirmationPage"
             android:exported="false" />
         <activity
-            android:name="com.example.tagalong.sign_in"
+            android:name="com.example.tagalong.JoinRide.ConfirmationOfRequestToJoin"
             android:exported="false" />
         <activity
-            android:name="com.example.tagalong.SignUp"
+            android:name="com.example.tagalong.JoinRide.JoinARideDetails"
             android:exported="false" />
         <activity
-            android:name="com.example.tagalong.ResetPasswordCode"
+            android:name="com.example.tagalong.JoinRide.JoinRide"
             android:exported="false" />
         <activity
-            android:name="com.example.tagalong.ResetEmailConfirmation"
+            android:name="com.example.tagalong.BookARide.BookARide"
             android:exported="false" />
         <activity
-            android:name="com.example.tagalong.VerificationSuccess"
+            android:name="com.example.tagalong.StartRide.StartARide"
+            android:exported="false" />
+        <activity
+            android:name="com.example.tagalong.Profile.Profile"
+            android:exported="false" />
+        <activity
+            android:name="com.example.tagalong.payments.PaymentsConfirmation"
+            android:exported="false" />
+        <activity
+            android:name="com.example.tagalong.payments.WalletDeposit"
+            android:exported="false" />
+        <activity
+            android:name="com.example.tagalong.payments.paymentConfirmationSuccess"
+            android:exported="false" />
+        <activity
+            android:name="com.example.tagalong.payments.PaymentInitialization"
+            android:exported="false" />
+        <activity
+            android:name="com.example.tagalong.home.HomeMain"
+            android:exported="false" />
+        <activity
+            android:name="com.example.tagalong.Authentication.sign_in"
+            android:exported="false" />
+        <activity
+            android:name="com.example.tagalong.Authentication.SignUp"
+            android:exported="false" />
+        <activity
+            android:name="com.example.tagalong.Authentication.ResetPasswordCode"
+            android:exported="false" />
+        <activity
+            android:name="com.example.tagalong.Authentication.ResetEmailConfirmation"
+            android:exported="false" />
+        <activity
+            android:name="com.example.tagalong.Verification.VerificationSuccess"
             android:exported="false" />
         <activity
             android:name="com.example.tagalong.MainActivity"

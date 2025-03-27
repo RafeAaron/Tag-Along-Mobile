@@ -4,7 +4,7 @@
             "outputFile": "com.example.tagalong.app-mergeDebugResources-41:/values-w1240dp-v13/values-w1240dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/rafeaaron/AndroidStudioProjects/TagAlong/app/src/main/res/values-w1240dp/dimens.xml",
+                    "source": "/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/res/values-w1240dp/dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "6",

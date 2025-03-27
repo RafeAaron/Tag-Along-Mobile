@@ -37,10 +37,10 @@ com.example.tagalong.app-appcompat-resources-1.7.0-35 /home/rafeaaron/.gradle/ca
 com.example.tagalong.app-activity-1.10.0-36 /home/rafeaaron/.gradle/caches/8.10.2/transforms/df2ebf918f2021ac25a53272ac9526e1/transformed/activity-1.10.0/res
 com.example.tagalong.app-core-ktx-1.13.0-37 /home/rafeaaron/.gradle/caches/8.10.2/transforms/e451adc84273499f4d9bd5958f068be6/transformed/core-ktx-1.13.0/res
 com.example.tagalong.app-constraintlayout-2.2.0-38 /home/rafeaaron/.gradle/caches/8.10.2/transforms/f7653ba08126bf584607df8733e9202d/transformed/constraintlayout-2.2.0/res
-com.example.tagalong.app-pngs-39 /home/rafeaaron/AndroidStudioProjects/TagAlong/app/build/generated/res/pngs/debug
-com.example.tagalong.app-resValues-40 /home/rafeaaron/AndroidStudioProjects/TagAlong/app/build/generated/res/resValues/debug
-com.example.tagalong.app-packageDebugResources-41 /home/rafeaaron/AndroidStudioProjects/TagAlong/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
-com.example.tagalong.app-packageDebugResources-42 /home/rafeaaron/AndroidStudioProjects/TagAlong/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
-com.example.tagalong.app-debug-43 /home/rafeaaron/AndroidStudioProjects/TagAlong/app/build/intermediates/merged_res/debug/mergeDebugResources
-com.example.tagalong.app-debug-44 /home/rafeaaron/AndroidStudioProjects/TagAlong/app/src/debug/res
-com.example.tagalong.app-main-45 /home/rafeaaron/AndroidStudioProjects/TagAlong/app/src/main/res
+com.example.tagalong.app-pngs-39 /home/rafeaaron/Desktop/Tag-Along-Mobile/app/build/generated/res/pngs/debug
+com.example.tagalong.app-resValues-40 /home/rafeaaron/Desktop/Tag-Along-Mobile/app/build/generated/res/resValues/debug
+com.example.tagalong.app-packageDebugResources-41 /home/rafeaaron/Desktop/Tag-Along-Mobile/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.example.tagalong.app-packageDebugResources-42 /home/rafeaaron/Desktop/Tag-Along-Mobile/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.example.tagalong.app-debug-43 /home/rafeaaron/Desktop/Tag-Along-Mobile/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.example.tagalong.app-debug-44 /home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/debug/res
+com.example.tagalong.app-main-45 /home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/res

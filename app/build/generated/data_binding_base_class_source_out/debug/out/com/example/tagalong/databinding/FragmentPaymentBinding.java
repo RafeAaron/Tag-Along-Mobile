@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.tagalong.R;
@@ -23,16 +24,20 @@ public final class FragmentPaymentBinding implements ViewBinding {
   public final TextView amountInWallet;
 
   @NonNull
+  public final RecyclerView listOfPayments;
+
+  @NonNull
   public final TextView paymentsPageHeading;
 
   @NonNull
   public final TextView pendingPaymentHeading;
 
   private FragmentPaymentBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView amountInWallet, @NonNull TextView paymentsPageHeading,
-      @NonNull TextView pendingPaymentHeading) {
+      @NonNull TextView amountInWallet, @NonNull RecyclerView listOfPayments,
+      @NonNull TextView paymentsPageHeading, @NonNull TextView pendingPaymentHeading) {
     this.rootView = rootView;
     this.amountInWallet = amountInWallet;
+    this.listOfPayments = listOfPayments;
     this.paymentsPageHeading = paymentsPageHeading;
     this.pendingPaymentHeading = pendingPaymentHeading;
   }
@@ -70,6 +75,12 @@ public final class FragmentPaymentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.listOfPayments;
+      RecyclerView listOfPayments = ViewBindings.findChildViewById(rootView, id);
+      if (listOfPayments == null) {
+        break missingId;
+      }
+
       id = R.id.paymentsPageHeading;
       TextView paymentsPageHeading = ViewBindings.findChildViewById(rootView, id);
       if (paymentsPageHeading == null) {
@@ -82,7 +93,7 @@ public final class FragmentPaymentBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentPaymentBinding((ConstraintLayout) rootView, amountInWallet,
+      return new FragmentPaymentBinding((ConstraintLayout) rootView, amountInWallet, listOfPayments,
           paymentsPageHeading, pendingPaymentHeading);
     }
     String missingId = rootView.getResources().getResourceName(id);

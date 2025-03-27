@@ -16,9 +16,4 @@ public class User{
         this.user_name = user_name;
     }
 
-    public bool saveUser()
-    {
-
-    }
-
 }

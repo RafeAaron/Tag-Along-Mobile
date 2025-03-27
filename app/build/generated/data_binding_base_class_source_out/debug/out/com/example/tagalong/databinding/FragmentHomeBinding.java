@@ -4,10 +4,15 @@ package com.example.tagalong.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.HorizontalScrollView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.tagalong.R;
@@ -20,11 +25,56 @@ public final class FragmentHomeBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final LinearLayout navBar;
+  public final LinearLayout bookARide;
 
-  private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull LinearLayout navBar) {
+  @NonNull
+  public final TextView currentLocationHeading;
+
+  @NonNull
+  public final TextView currentTripsInProgressHeading;
+
+  @NonNull
+  public final RecyclerView currentTripsInProgressList;
+
+  @NonNull
+  public final LinearLayout joinARide;
+
+  @NonNull
+  public final HorizontalScrollView optionsToDoToday;
+
+  @NonNull
+  public final TextView optionsToDoTodayHeading;
+
+  @NonNull
+  public final ImageView profilePictureButton;
+
+  @NonNull
+  public final ScrollView scrollViewHomeContent;
+
+  @NonNull
+  public final LinearLayout startARide;
+
+  @NonNull
+  public final TextView welcomeHeading;
+
+  private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull LinearLayout bookARide,
+      @NonNull TextView currentLocationHeading, @NonNull TextView currentTripsInProgressHeading,
+      @NonNull RecyclerView currentTripsInProgressList, @NonNull LinearLayout joinARide,
+      @NonNull HorizontalScrollView optionsToDoToday, @NonNull TextView optionsToDoTodayHeading,
+      @NonNull ImageView profilePictureButton, @NonNull ScrollView scrollViewHomeContent,
+      @NonNull LinearLayout startARide, @NonNull TextView welcomeHeading) {
     this.rootView = rootView;
-    this.navBar = navBar;
+    this.bookARide = bookARide;
+    this.currentLocationHeading = currentLocationHeading;
+    this.currentTripsInProgressHeading = currentTripsInProgressHeading;
+    this.currentTripsInProgressList = currentTripsInProgressList;
+    this.joinARide = joinARide;
+    this.optionsToDoToday = optionsToDoToday;
+    this.optionsToDoTodayHeading = optionsToDoTodayHeading;
+    this.profilePictureButton = profilePictureButton;
+    this.scrollViewHomeContent = scrollViewHomeContent;
+    this.startARide = startARide;
+    this.welcomeHeading = welcomeHeading;
   }
 
   @Override
@@ -54,13 +104,76 @@ public final class FragmentHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.navBar;
-      LinearLayout navBar = ViewBindings.findChildViewById(rootView, id);
-      if (navBar == null) {
+      id = R.id.bookARide;
+      LinearLayout bookARide = ViewBindings.findChildViewById(rootView, id);
+      if (bookARide == null) {
         break missingId;
       }
 
-      return new FragmentHomeBinding((ConstraintLayout) rootView, navBar);
+      id = R.id.currentLocationHeading;
+      TextView currentLocationHeading = ViewBindings.findChildViewById(rootView, id);
+      if (currentLocationHeading == null) {
+        break missingId;
+      }
+
+      id = R.id.currentTripsInProgressHeading;
+      TextView currentTripsInProgressHeading = ViewBindings.findChildViewById(rootView, id);
+      if (currentTripsInProgressHeading == null) {
+        break missingId;
+      }
+
+      id = R.id.currentTripsInProgressList;
+      RecyclerView currentTripsInProgressList = ViewBindings.findChildViewById(rootView, id);
+      if (currentTripsInProgressList == null) {
+        break missingId;
+      }
+
+      id = R.id.joinARide;
+      LinearLayout joinARide = ViewBindings.findChildViewById(rootView, id);
+      if (joinARide == null) {
+        break missingId;
+      }
+
+      id = R.id.optionsToDoToday;
+      HorizontalScrollView optionsToDoToday = ViewBindings.findChildViewById(rootView, id);
+      if (optionsToDoToday == null) {
+        break missingId;
+      }
+
+      id = R.id.optionsToDoTodayHeading;
+      TextView optionsToDoTodayHeading = ViewBindings.findChildViewById(rootView, id);
+      if (optionsToDoTodayHeading == null) {
+        break missingId;
+      }
+
+      id = R.id.profilePictureButton;
+      ImageView profilePictureButton = ViewBindings.findChildViewById(rootView, id);
+      if (profilePictureButton == null) {
+        break missingId;
+      }
+
+      id = R.id.scrollViewHomeContent;
+      ScrollView scrollViewHomeContent = ViewBindings.findChildViewById(rootView, id);
+      if (scrollViewHomeContent == null) {
+        break missingId;
+      }
+
+      id = R.id.startARide;
+      LinearLayout startARide = ViewBindings.findChildViewById(rootView, id);
+      if (startARide == null) {
+        break missingId;
+      }
+
+      id = R.id.welcomeHeading;
+      TextView welcomeHeading = ViewBindings.findChildViewById(rootView, id);
+      if (welcomeHeading == null) {
+        break missingId;
+      }
+
+      return new FragmentHomeBinding((ConstraintLayout) rootView, bookARide, currentLocationHeading,
+          currentTripsInProgressHeading, currentTripsInProgressList, joinARide, optionsToDoToday,
+          optionsToDoTodayHeading, profilePictureButton, scrollViewHomeContent, startARide,
+          welcomeHeading);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
