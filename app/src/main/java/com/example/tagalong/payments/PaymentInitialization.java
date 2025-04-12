@@ -44,6 +44,7 @@ public class PaymentInitialization extends AppCompatActivity {
         //Action to be taken when the deposit on wallet text is clicked
         Intent goToDepositOnWalletIntent = new Intent(this, WalletDeposit.class);
         startActivity(goToDepositOnWalletIntent);
+        finish();
 
     }
 }

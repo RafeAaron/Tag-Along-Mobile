@@ -36,6 +36,7 @@ id action_SecondFragment_to_FirstFragment
 id additionalPaymentDetailsHeading
 id ageOfPassengerAbstract
 id agreedFee
+id airtelMoneyOption
 id amountInWallet
 id amountToAdd
 id amountToPay
@@ -90,11 +91,17 @@ id listOfPayments
 id main
 id mapIcon
 id moneyIcon
+id mtnMobileMoneyOption
 id nameOfDriverBooked
 id nameOfPassengerAbstract
 id nav_graph
 id navigationDrawer
 id numberOfPassengerInCurrentTrip
+id numberOfSeats1
+id numberOfSeats2
+id numberOfSeats3
+id numberOfSeats4
+id numberOfSeats5_
 id numberOfSeatsAvailableHeading
 id numberOfSeatsSelected
 id numberOfSeatsSpecified
@@ -110,6 +117,7 @@ id paymentMethodOptions
 id paymentOptionsAdditionalDetailOne
 id paymentReason
 id paymentsPageHeading
+id paypalAccountName
 id pendingPaymentHeading
 id pickUpTimeHeading
 id profileHeading
@@ -133,6 +141,7 @@ id signInBtn
 id signInHeading
 id signInPassword
 id signInSub
+id signUnBtn
 id signUpConfirmPassword
 id signUpEmail
 id signUpHeading

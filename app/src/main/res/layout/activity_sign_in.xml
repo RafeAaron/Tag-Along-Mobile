@@ -109,7 +109,6 @@
         android:fontFamily="@font/sfprodisplayregular"
         android:textSize="20sp"
         android:text="Sign In"
-        android:onClick="goToHomePage"
 
         />
 

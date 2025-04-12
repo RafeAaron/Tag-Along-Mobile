@@ -25,7 +25,7 @@ public final class ActivitySignUpBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
-  public final Button signInBtn;
+  public final Button signUnBtn;
 
   @NonNull
   public final EditText signUpConfirmPassword;
@@ -46,13 +46,13 @@ public final class ActivitySignUpBinding implements ViewBinding {
   public final EditText usernameSignUp;
 
   private ActivitySignUpBinding(@NonNull ConstraintLayout rootView, @NonNull ConstraintLayout main,
-      @NonNull Button signInBtn, @NonNull EditText signUpConfirmPassword,
+      @NonNull Button signUnBtn, @NonNull EditText signUpConfirmPassword,
       @NonNull EditText signUpEmail, @NonNull TextView signUpHeading,
       @NonNull EditText signUpPassword, @NonNull TextView signUpSub,
       @NonNull EditText usernameSignUp) {
     this.rootView = rootView;
     this.main = main;
-    this.signInBtn = signInBtn;
+    this.signUnBtn = signUnBtn;
     this.signUpConfirmPassword = signUpConfirmPassword;
     this.signUpEmail = signUpEmail;
     this.signUpHeading = signUpHeading;
@@ -90,9 +90,9 @@ public final class ActivitySignUpBinding implements ViewBinding {
     missingId: {
       ConstraintLayout main = (ConstraintLayout) rootView;
 
-      id = R.id.signInBtn;
-      Button signInBtn = ViewBindings.findChildViewById(rootView, id);
-      if (signInBtn == null) {
+      id = R.id.signUnBtn;
+      Button signUnBtn = ViewBindings.findChildViewById(rootView, id);
+      if (signUnBtn == null) {
         break missingId;
       }
 
@@ -132,7 +132,7 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySignUpBinding((ConstraintLayout) rootView, main, signInBtn,
+      return new ActivitySignUpBinding((ConstraintLayout) rootView, main, signUnBtn,
           signUpConfirmPassword, signUpEmail, signUpHeading, signUpPassword, signUpSub,
           usernameSignUp);
     }

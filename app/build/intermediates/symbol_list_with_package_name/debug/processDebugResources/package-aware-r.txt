@@ -3258,6 +3258,7 @@ id add
 id additionalPaymentDetailsHeading
 id ageOfPassengerAbstract
 id agreedFee
+id airtelMoneyOption
 id alertTitle
 id aligned
 id all
@@ -3524,6 +3525,7 @@ id month_navigation_next
 id month_navigation_previous
 id month_title
 id motion_base
+id mtnMobileMoneyOption
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
 id mtrl_calendar_days_of_week
@@ -3573,6 +3575,11 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id numberOfPassengerInCurrentTrip
+id numberOfSeats1
+id numberOfSeats2
+id numberOfSeats3
+id numberOfSeats4
+id numberOfSeats5_
 id numberOfSeatsAvailableHeading
 id numberOfSeatsSelected
 id numberOfSeatsSpecified
@@ -3617,6 +3624,7 @@ id paymentMethodOptions
 id paymentOptionsAdditionalDetailOne
 id paymentReason
 id paymentsPageHeading
+id paypalAccountName
 id peekHeight
 id pendingPaymentHeading
 id percent
@@ -3689,6 +3697,7 @@ id signInBtn
 id signInHeading
 id signInPassword
 id signInSub
+id signUnBtn
 id signUpConfirmPassword
 id signUpEmail
 id signUpHeading

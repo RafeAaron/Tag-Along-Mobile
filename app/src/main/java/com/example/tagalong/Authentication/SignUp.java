@@ -3,6 +3,7 @@ package com.example.tagalong.Authentication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
@@ -21,6 +22,8 @@ public class SignUp  extends AppCompatActivity {
     EditText userPassword;
     EditText userConfirmedPassword;
 
+    Button signUpBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +39,23 @@ public class SignUp  extends AppCompatActivity {
         userEmail = (EditText) findViewById(R.id.signUpEmail);
         userPassword = (EditText) findViewById(R.id.signUpPassword);
         userConfirmedPassword = (EditText) findViewById(R.id.signUpConfirmPassword);
+        signUpBtn = (Button) findViewById(R.id.signUnBtn);
+
+        signUpBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                /*
+                Logic to handle the sign up process
+                use:
+                    userName to handle the user's desired username
+                    userEmail to handle the user's email
+                    userPassword to handle the user's password
+                    userConfirmedPassword to handle the user's confirmed password
+                 */
+
+                goToHomePage();
+            }
+        });
 
     }
 
@@ -46,7 +66,7 @@ public class SignUp  extends AppCompatActivity {
         finish();
     }
 
-    public void goToHomePage(View view)
+    public void goToHomePage()
     {
         Intent goToHomePageIntent = new Intent(this, HomeMain.class);
         startActivity(goToHomePageIntent);

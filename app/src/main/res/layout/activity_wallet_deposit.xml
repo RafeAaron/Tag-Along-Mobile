@@ -57,6 +57,7 @@
         android:fontFamily="@font/sfprodisplayregular"
         android:text="5400"
         android:textSize="40sp"
+        android:editable="true"
 
         />
 
@@ -111,6 +112,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
+            android:id="@+id/mtnMobileMoneyOption"
+
             android:text="MTN Mobile Money"
             android:fontFamily="@font/sfprodisplayregular"
             android:textFontWeight="500"
@@ -120,6 +123,8 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
+            android:id="@+id/airtelMoneyOption"
 
             android:text="Airtel Money"
             android:fontFamily="@font/sfprodisplayregular"
@@ -131,15 +136,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:text="Bank Card"
-            android:fontFamily="@font/sfprodisplayregular"
-            android:textFontWeight="500"
-
-            />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/paypalAccountName"
 
             android:text="Pay Pal"
             android:fontFamily="@font/sfprodisplayregular"

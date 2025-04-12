@@ -1,11 +1,17 @@
 package com.example.tagalong.payments;
 
+import static android.view.View.INVISIBLE;
+import static android.view.View.VISIBLE;
+
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -20,6 +26,12 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class WalletDeposit extends AppCompatActivity {
 
+    RadioGroup paymentMethod;
+    TextView description;
+    EditText editTextPaymentDetail;
+
+    boolean detailsVisible = false;
+
     Context myContext = this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +42,79 @@ public class WalletDeposit extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+        description = (TextView) findViewById(R.id.additionalPaymentDetailsHeading);
+        editTextPaymentDetail = (EditText) findViewById(R.id.paymentOptionsAdditionalDetailOne);
+
+        description.setVisibility(INVISIBLE);
+        editTextPaymentDetail.setVisibility(INVISIBLE);
+
+        description.setText("Enter MTN Mobile Number");
+
+        paymentMethod = (RadioGroup) findViewById(R.id.paymentMethodOptions);
+
+        paymentMethod.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+
+                TextView description = (TextView) findViewById(R.id.additionalPaymentDetailsHeading);
+                if(checkedId == R.id.mtnMobileMoneyOption)
+                {
+
+                    description.setText("Enter MTN Mobile Number");
+                    editTextPaymentDetail.getText().clear();
+                    editTextPaymentDetail.setHint("0774568398");
+
+
+                    if(!detailsVisible)
+                    {
+                        editTextPaymentDetail.setVisibility(VISIBLE);
+                        description.setVisibility(VISIBLE);
+
+                        detailsVisible = true;
+                    }
+                    /*
+                    Handle Inputs to mobile money transaction
+                     */
+                }
+                else if(checkedId == R.id.airtelMoneyOption)
+                {
+
+                    description.setText("Enter Airtel Mobile Number");
+                    editTextPaymentDetail.getText().clear();
+                    editTextPaymentDetail.setHint("0704567896");
+
+                    if(!detailsVisible)
+                    {
+                        editTextPaymentDetail.setVisibility(VISIBLE);
+                        description.setVisibility(VISIBLE);
+                        detailsVisible = true;
+                    }
+                    /*
+                    Handle Inputs to airtel money transaction
+                     */
+
+                }
+
+                else if(checkedId == R.id.paypalAccountName)
+                {
+                    description.setText("Enter Paypal Account Name");
+                    editTextPaymentDetail.getText().clear();
+                    editTextPaymentDetail.setHint("@RafeAaron");
+
+                    if(!detailsVisible)
+                    {
+                        editTextPaymentDetail.setVisibility(VISIBLE);
+                        description.setVisibility(VISIBLE);
+                        detailsVisible = true;
+                    }
+
+                    /*
+                    Handle Inputs to the paypal money transactions
+                     */
+
+                }
+            }
         });
     }
 

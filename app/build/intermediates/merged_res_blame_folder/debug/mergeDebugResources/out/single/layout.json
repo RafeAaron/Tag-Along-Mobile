@@ -20,6 +20,10 @@
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/fragment_home.xml"
     },
     {
+        "merged": "com.example.tagalong.app-mergeDebugResources-42:/layout/activity_sign_up.xml",
+        "source": "com.example.tagalong.app-main-45:/layout/activity_sign_up.xml"
+    },
+    {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/activity_profile_change_confirmation.xml",
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/activity_profile_change_confirmation.xml"
     },
@@ -44,12 +48,12 @@
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/activity_reset_code_confirmation.xml"
     },
     {
-        "merged": "com.example.tagalong.app-mergeDebugResources-42:/layout/bookings_template.xml",
-        "source": "com.example.tagalong.app-main-45:/layout/bookings_template.xml"
-    },
-    {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/activity_join_aride_details.xml",
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/activity_join_aride_details.xml"
+    },
+    {
+        "merged": "com.example.tagalong.app-mergeDebugResources-42:/layout/activity_reset_code.xml",
+        "source": "com.example.tagalong.app-main-45:/layout/activity_reset_code.xml"
     },
     {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/activity_sign_in.xml",
@@ -86,6 +90,10 @@
     {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/activity_payments_confirmation.xml",
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/activity_payments_confirmation.xml"
+    },
+    {
+        "merged": "com.example.tagalong.app-mergeDebugResources-42:/layout/activity_sign_in.xml",
+        "source": "com.example.tagalong.app-main-45:/layout/activity_sign_in.xml"
     },
     {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-mergeDebugResources-42:/layout/fragment_payment.xml",

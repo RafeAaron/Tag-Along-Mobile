@@ -3,6 +3,7 @@ package com.example.tagalong.Authentication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
@@ -18,6 +19,7 @@ public class sign_in extends AppCompatActivity {
 
     EditText userName;
     EditText password;
+    Button signInBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,12 +34,29 @@ public class sign_in extends AppCompatActivity {
 
         userName = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.signInPassword);
+        signInBtn = (Button) findViewById(R.id.signInBtn);
+
+        signInBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                /*
+                Logic to handle the sign in process
+                use:
+                    userName to obtain the username
+                    password to obtain the entered password
+                 */
+
+                goToHomePage(1);
+
+            }
+        });
     }
 
-    public void goToHomePage(View view)
+    public void goToHomePage(int userID)
     {
         Intent goToHomePage = new Intent(this, HomeMain.class);
-        goToHomePage.putExtra("User ID", 1);
+        goToHomePage.putExtra("User ID", userID);
         startActivity(goToHomePage);
         finish();
     }

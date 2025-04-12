@@ -3257,6 +3257,7 @@ int id add 0x7f09004c
 int id additionalPaymentDetailsHeading 0x7f09004d
 int id ageOfPassengerAbstract 0x7f09027c
 int id agreedFee 0x7f090287
+int id airtelMoneyOption 0x7f09028e
 int id alertTitle 0x7f09004e
 int id aligned 0x7f09004f
 int id all 0x7f090050
@@ -3523,6 +3524,7 @@ int id month_navigation_next 0x7f09013d
 int id month_navigation_previous 0x7f09013e
 int id month_title 0x7f09013f
 int id motion_base 0x7f090140
+int id mtnMobileMoneyOption 0x7f090290
 int id mtrl_anchor_parent 0x7f090141
 int id mtrl_calendar_day_selector_frame 0x7f090142
 int id mtrl_calendar_days_of_week 0x7f090143
@@ -3572,6 +3574,11 @@ int id notification_background 0x7f09016c
 int id notification_main_column 0x7f09016d
 int id notification_main_column_container 0x7f09016e
 int id numberOfPassengerInCurrentTrip 0x7f090282
+int id numberOfSeats1 0x7f090292
+int id numberOfSeats2 0x7f090293
+int id numberOfSeats3 0x7f090294
+int id numberOfSeats4 0x7f090295
+int id numberOfSeats5_ 0x7f090296
 int id numberOfSeatsAvailableHeading 0x7f090268
 int id numberOfSeatsSelected 0x7f090269
 int id numberOfSeatsSpecified 0x7f09026a
@@ -3616,6 +3623,7 @@ int id paymentMethodOptions 0x7f090191
 int id paymentOptionsAdditionalDetailOne 0x7f090192
 int id paymentReason 0x7f090193
 int id paymentsPageHeading 0x7f090194
+int id paypalAccountName 0x7f090291
 int id peekHeight 0x7f090195
 int id pendingPaymentHeading 0x7f090196
 int id percent 0x7f090197
@@ -3688,6 +3696,7 @@ int id signInBtn 0x7f0901d2
 int id signInHeading 0x7f0901d3
 int id signInPassword 0x7f0901d4
 int id signInSub 0x7f0901d5
+int id signUnBtn 0x7f090297
 int id signUpConfirmPassword 0x7f0901d6
 int id signUpEmail 0x7f0901d7
 int id signUpHeading 0x7f0901d8

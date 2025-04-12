@@ -212,6 +212,10 @@
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
+        "merged": "com.example.tagalong.app-debug-43:/layout_activity_reset_code.xml.flat",
+        "source": "com.example.tagalong.app-main-45:/layout/activity_reset_code.xml"
+    },
+    {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/mipmap-xhdpi_ic_debit_account.png.flat",
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/mipmap-xhdpi/ic_debit_account.png"
     },
@@ -358,10 +362,6 @@
     {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/drawable-xxhdpi_qr_code.png.flat",
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/drawable-xxhdpi/qr_code.png"
-    },
-    {
-        "merged": "com.example.tagalong.app-debug-43:/layout_bookings_template.xml.flat",
-        "source": "com.example.tagalong.app-main-45:/layout/bookings_template.xml"
     },
     {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/mipmap-xxhdpi_app_logo_round.webp.flat",
@@ -528,6 +528,10 @@
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/mipmap-mdpi/app_logo.webp"
     },
     {
+        "merged": "com.example.tagalong.app-debug-43:/layout_activity_sign_in.xml.flat",
+        "source": "com.example.tagalong.app-main-45:/layout/activity_sign_in.xml"
+    },
+    {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/layout_verification_confirmation.xml.flat",
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/verification_confirmation.xml"
     },
@@ -642,6 +646,10 @@
     {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/layout_payment_view.xml.flat",
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/payment_view.xml"
+    },
+    {
+        "merged": "com.example.tagalong.app-debug-43:/layout_activity_sign_up.xml.flat",
+        "source": "com.example.tagalong.app-main-45:/layout/activity_sign_up.xml"
     },
     {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/drawable-mdpi_back_arrow.png.flat",
