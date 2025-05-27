@@ -1,6 +1,8 @@
 package com.example.tagalong.JoinRide;
 
 import android.content.Context;
+import android.location.Location;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,22 +16,41 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.tagalong.R;
 import com.example.tagalong.home.CurrentTripsAdapter;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.w3c.dom.Text;
+
+import java.util.Objects;
+
 public class JoinARideAdapater extends RecyclerView.Adapter<JoinARideAdapater.JoinARideViewHolder> {
 
     String[] namesOfDrivers = {"Rafe Aaron", "Ralph Monopoly", "Gracious Nominus", "Blue Whales"};
     String[] numberOfPassengers = {"4", "1", "4", "3"};
-    String[] genderOfPassengers = {"Male", "Male", "Female", "Male"};
     String[] startLocation = {"TASO Village", "Ruharo", "Kashanyarazi", "Mbarara Town"};
     String[] endLocation = {"Ruharo", "Mbarara Town Council", "Ruharo", "Kakoba"};
 
+    String[] genders;
     Context parentContext;
 
-    View.OnClickListener viewOnClickListener;
+    int[] ids;
 
-    public JoinARideAdapater(Context context)
+    private static int number = 0;
+
+
+    public JoinARideAdapater(Context context, String[] driversNames, String[] startLocations, String[] endLocations, String[] numberOfPassengers, int[] ids, String[] gender)
     {
         this.parentContext = context;
+        this.namesOfDrivers = driversNames;
+        this.startLocation = startLocations;
+        this.endLocation = endLocations;
+        this.numberOfPassengers = numberOfPassengers;
+        this.ids = ids;
+        this.genders = gender;
+
+        number = 0;
     }
+
+    View.OnClickListener viewOnClickListener;
 
     public void setViewOnCLickListener(View.OnClickListener onViewClickListener)
     {
@@ -46,6 +67,15 @@ public class JoinARideAdapater extends RecyclerView.Adapter<JoinARideAdapater.Jo
         viewHolder.setParentContext(this.parentContext);
         viewHolder.setItemOnClickListener(viewOnClickListener);
 
+        JSONObject jsonOB = new JSONObject();
+        try {
+            jsonOB.put("id", ids[number]);
+            view.setTag(jsonOB);
+            number++;
+        } catch (JSONException e) {
+            throw new RuntimeException(e);
+        }
+
         return viewHolder;
     }
 
@@ -55,22 +85,19 @@ public class JoinARideAdapater extends RecyclerView.Adapter<JoinARideAdapater.Jo
         String driverAndNumberOfPassengers = "";
         String routeTaken = "";
 
-        if(genderOfPassengers[position] == "Male")
-        {
 
-            driverAndNumberOfPassengers += "Mr. " + namesOfDrivers[position] + " (" + numberOfPassengers[position] + " passengers )";
-            routeTaken += startLocation[position] + " -> " + endLocation[position];
+        driverAndNumberOfPassengers += namesOfDrivers[position] + " (" + numberOfPassengers[position] + " passengers )";
+        routeTaken += startLocation[position] + " -> " + endLocation[position];
 
-            holder.getDriverAndPassengers().setText(driverAndNumberOfPassengers);
-            holder.getRoute().setText(routeTaken);
+        holder.getDriverAndPassengers().setText(driverAndNumberOfPassengers);
+        holder.getRoute().setText(routeTaken);
+
+        //Log.e("Success", genders[position]);
+
+        if(Objects.equals(genders[position], "Male")) {
             holder.getGender().setImageResource(R.drawable.ic_profile_icon);
 
         }else {
-            driverAndNumberOfPassengers += "Mrs. " + namesOfDrivers[position] + " (" + numberOfPassengers[position] + " passengers )";
-            routeTaken += startLocation[position] + " -> " + endLocation[position];
-
-            holder.getDriverAndPassengers().setText(driverAndNumberOfPassengers);
-            holder.getRoute().setText(routeTaken);
             holder.getGender().setImageResource(R.drawable.ic_female_icon);
         }
 
@@ -95,10 +122,9 @@ public class JoinARideAdapater extends RecyclerView.Adapter<JoinARideAdapater.Jo
      public JoinARideViewHolder(View view)
      {
          super(view);
-
-         this.genderImage = (ImageView) view.findViewById(R.id.icon_gender_trip_details);
          this.driverAndPassengers = view.findViewById(R.id.driverDetailsAndPassengers);
          this.routeDetails = view.findViewById(R.id.routeToTake);
+         this.genderImage = view.findViewById(R.id.genderOfTripAbstract);
 
          this.myView = view;
      }

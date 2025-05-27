@@ -38,6 +38,21 @@
 
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/usernameTextHint"
+
+        app:layout_constraintTop_toBottomOf="@id/signInSub"
+        app:layout_constraintLeft_toLeftOf="@id/username"
+        android:layout_marginTop="20dp"
+        android:text="Username"
+        android:textSize="14sp"
+        android:fontFamily="@font/sfprodisplaymedium"
+
+        />
+
     <EditText
         android:layout_width="300dp"
         android:layout_height="52dp"
@@ -45,14 +60,46 @@
 
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signInSub"
-        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/usernameTextHint"
+        android:layout_marginTop="5dp"
         android:fontFamily="@font/sfprodisplayregular"
-        android:hint="\@rafeAaron23"
-        android:textSize="20sp"
+        android:hint="Enter Username Here"
+        android:textSize="18sp"
         android:background="@drawable/edit_text_border"
 
         android:paddingLeft="20dp"
+
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        android:id="@+id/usernameErrorMessage"
+
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintLeft_toLeftOf="@id/username"
+        android:layout_marginTop="5dp"
+
+        android:text="Error Message Goes Here"
+        android:textSize="10sp"
+        android:textColor="#FF0000"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/passwordTextHint"
+
+        app:layout_constraintTop_toBottomOf="@id/usernameErrorMessage"
+        app:layout_constraintLeft_toLeftOf="@id/usernameErrorMessage"
+        android:layout_marginTop="5dp"
+        android:text="Password"
+        android:textSize="14sp"
+        android:fontFamily="@font/sfprodisplaymedium"
 
         />
 
@@ -63,7 +110,7 @@
 
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintTop_toBottomOf="@id/passwordTextHint"
         android:fontFamily="@font/sfprodisplayregular"
         android:layout_marginTop="10dp"
         android:hint="********"
@@ -78,12 +125,29 @@
         />
 
     <TextView
+        android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:layout_height="48dp"
+
+        android:id="@+id/passwordErrorMessage"
+
+        app:layout_constraintTop_toBottomOf="@id/signInPassword"
+        app:layout_constraintLeft_toLeftOf="@id/signInPassword"
+        android:layout_marginTop="5dp"
+
+        android:text="Error Message Goes Here"
+        android:textSize="10sp"
+        android:textColor="#FF0000"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="@id/signInPassword"
         app:layout_constraintTop_toBottomOf="@id/signInPassword"
 
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:text="Forgot Password?"
         android:textSize="16sp"
         android:gravity="center_vertical"
@@ -114,19 +178,19 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toTopOf="@id/signInBtn"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="15dp"
 
-        android:text="Don't have an account yet? Sign up"
+        android:text="Not yet a member? Get Started"
         android:textColor="#0000F4"
         android:clickable="true"
         android:textSize="16sp"
         android:gravity="center_vertical"
-        android:onClick="goToSignUpPage"
+        android:onClick="goToOnBoardingPage"
 
 
         />

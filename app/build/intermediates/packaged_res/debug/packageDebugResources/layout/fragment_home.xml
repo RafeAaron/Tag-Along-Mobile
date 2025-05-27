@@ -250,7 +250,63 @@
                 app:layout_constraintRight_toRightOf="parent"
 
                 android:background="@drawable/options_layout"
-                />
+
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:id="@+id/rideNumber"
+
+                    android:text="Ride ID: N/A"
+                    android:textSize="32sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:id="@+id/driverNameOnTrip"
+
+                    android:text="Driver: N/A"
+                    android:textSize="16sp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:id="@+id/passengerCount"
+                    android:layout_marginBottom="5dp"
+
+                    android:text="Number of passengers: N/A"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:id="@+id/routeETA"
+
+                    android:text="ETA: 1 hour 5 minutes"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+
+                    />
+
+            </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"

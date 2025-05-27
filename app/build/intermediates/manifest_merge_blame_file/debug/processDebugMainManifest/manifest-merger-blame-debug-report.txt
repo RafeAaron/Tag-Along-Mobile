@@ -8,250 +8,286 @@
 8        android:minSdkVersion="24"
 9        android:targetSdkVersion="35" />
 10
-11    <permission
-11-->[androidx.core:core:1.13.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/7b9cda8b6acce3d705a391ac25d780c1/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
-12        android:name="com.example.tagalong.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.13.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/7b9cda8b6acce3d705a391ac25d780c1/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
-13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.13.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/7b9cda8b6acce3d705a391ac25d780c1/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:5:5-67
+11-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:6:5-79
+12-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:7:5-81
+13-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:7:22-78
 14
-15    <uses-permission android:name="com.example.tagalong.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.13.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/7b9cda8b6acce3d705a391ac25d780c1/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.13.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/7b9cda8b6acce3d705a391ac25d780c1/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
-16
-17    <application
-17-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:5:5-81:19
-18        android:allowBackup="true"
-18-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:6:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.13.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/7b9cda8b6acce3d705a391ac25d780c1/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
-20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:7:9-65
-21        android:debuggable="true"
-22        android:extractNativeLibs="false"
-23        android:fullBackupContent="@xml/backup_rules"
-23-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:8:9-54
-24        android:icon="@mipmap/app_logo"
-24-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:9:9-40
-25        android:label="@string/app_name"
-25-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:10:9-41
-26        android:roundIcon="@mipmap/app_logo_round"
-26-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:11:9-51
-27        android:supportsRtl="true"
-27-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:12:9-35
-28        android:testOnly="true"
-29        android:theme="@style/Theme.TagAlong" >
-29-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:13:9-46
-30        <activity
-30-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:15:9-17:40
-31            android:name="com.example.tagalong.Profile.ProfileChangeConfirmation"
-31-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:16:13-62
-32            android:exported="false" />
-32-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:17:13-37
-33        <activity
-33-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:18:9-20:40
-34            android:name="com.example.tagalong.BookARide.BookARideConfirmation"
-34-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:19:13-60
-35            android:exported="false" />
-35-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:20:13-37
-36        <activity
-36-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:21:9-23:40
-37            android:name="com.example.tagalong.StartRide.StartARideConfirmationPage"
-37-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:22:13-65
-38            android:exported="false" />
-38-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:23:13-37
-39        <activity
-39-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:24:9-26:40
-40            android:name="com.example.tagalong.JoinRide.ConfirmationOfRequestToJoin"
-40-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:25:13-65
-41            android:exported="false" />
-41-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:26:13-37
-42        <activity
-42-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:27:9-29:40
-43            android:name="com.example.tagalong.JoinRide.JoinARideDetails"
-43-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:28:13-54
-44            android:exported="false" />
-44-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:29:13-37
-45        <activity
-45-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:30:9-32:40
-46            android:name="com.example.tagalong.JoinRide.JoinRide"
-46-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:31:13-46
-47            android:exported="false" />
-47-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:32:13-37
-48        <activity
-48-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:33:9-35:40
-49            android:name="com.example.tagalong.BookARide.BookARide"
-49-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:34:13-48
-50            android:exported="false" />
-50-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:35:13-37
-51        <activity
-51-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:36:9-38:40
-52            android:name="com.example.tagalong.StartRide.StartARide"
-52-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:37:13-49
-53            android:exported="false" />
-53-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:38:13-37
-54        <activity
-54-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:39:9-41:40
-55            android:name="com.example.tagalong.Profile.Profile"
-55-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:40:13-44
-56            android:exported="false" />
-56-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:41:13-37
-57        <activity
-57-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:42:9-44:40
-58            android:name="com.example.tagalong.payments.PaymentsConfirmation"
-58-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:43:13-58
-59            android:exported="false" />
-59-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:44:13-37
-60        <activity
-60-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:45:9-47:40
-61            android:name="com.example.tagalong.payments.WalletDeposit"
-61-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:46:13-51
-62            android:exported="false" />
-62-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:47:13-37
-63        <activity
-63-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:48:9-50:40
-64            android:name="com.example.tagalong.payments.paymentConfirmationSuccess"
-64-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:49:13-64
-65            android:exported="false" />
-65-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:50:13-37
-66        <activity
-66-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:51:9-53:40
-67            android:name="com.example.tagalong.payments.PaymentInitialization"
-67-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:52:13-59
-68            android:exported="false" />
-68-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:53:13-37
-69        <activity
-69-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:54:9-56:40
-70            android:name="com.example.tagalong.home.HomeMain"
-70-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:55:13-42
-71            android:exported="false" />
-71-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:56:13-37
-72        <activity
-72-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:57:9-59:40
-73            android:name="com.example.tagalong.Authentication.sign_in"
-73-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:58:13-51
-74            android:exported="false" />
-74-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:59:13-37
-75        <activity
-75-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:60:9-62:40
-76            android:name="com.example.tagalong.Authentication.SignUp"
-76-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:61:13-50
-77            android:exported="false" />
-77-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:62:13-37
-78        <activity
-78-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:63:9-65:40
-79            android:name="com.example.tagalong.Authentication.ResetPasswordCode"
-79-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:64:13-61
-80            android:exported="false" />
-80-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:65:13-37
-81        <activity
-81-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:66:9-68:40
-82            android:name="com.example.tagalong.Authentication.ResetEmailConfirmation"
-82-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:67:13-66
-83            android:exported="false" />
-83-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:68:13-37
-84        <activity
-84-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:69:9-71:40
-85            android:name="com.example.tagalong.Verification.VerificationSuccess"
-85-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:70:13-61
-86            android:exported="false" />
-86-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:71:13-37
-87        <activity
-87-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:72:9-80:20
-88            android:name="com.example.tagalong.MainActivity"
-88-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:73:13-41
-89            android:exported="true" >
-89-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:74:13-36
-90            <intent-filter>
-90-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:75:13-79:29
-91                <action android:name="android.intent.action.MAIN" />
-91-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:76:17-69
-91-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:76:25-66
-92
-93                <category android:name="android.intent.category.LAUNCHER" />
-93-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:78:17-77
-93-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:78:27-74
-94            </intent-filter>
-95        </activity>
-96
-97        <provider
-97-->[androidx.emoji2:emoji2:1.3.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/be92e0a2c60030e46e02e11ad6a237cd/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
-98            android:name="androidx.startup.InitializationProvider"
-98-->[androidx.emoji2:emoji2:1.3.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/be92e0a2c60030e46e02e11ad6a237cd/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
-99            android:authorities="com.example.tagalong.androidx-startup"
-99-->[androidx.emoji2:emoji2:1.3.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/be92e0a2c60030e46e02e11ad6a237cd/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
-100            android:exported="false" >
-100-->[androidx.emoji2:emoji2:1.3.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/be92e0a2c60030e46e02e11ad6a237cd/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
-101            <meta-data
-101-->[androidx.emoji2:emoji2:1.3.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/be92e0a2c60030e46e02e11ad6a237cd/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
-102                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-102-->[androidx.emoji2:emoji2:1.3.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/be92e0a2c60030e46e02e11ad6a237cd/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
-103                android:value="androidx.startup" />
-103-->[androidx.emoji2:emoji2:1.3.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/be92e0a2c60030e46e02e11ad6a237cd/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
-104            <meta-data
-104-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/rafeaaron/.gradle/caches/8.10.2/transforms/1ccfb3b0868c1eb9532ca36254a91e6f/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
-105                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-105-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/rafeaaron/.gradle/caches/8.10.2/transforms/1ccfb3b0868c1eb9532ca36254a91e6f/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
-106                android:value="androidx.startup" />
-106-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/rafeaaron/.gradle/caches/8.10.2/transforms/1ccfb3b0868c1eb9532ca36254a91e6f/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
-107            <meta-data
-107-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
-108                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-108-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
-109                android:value="androidx.startup" />
-109-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
-110        </provider>
-111
-112        <uses-library
-112-->[androidx.window:window:1.0.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/59189e6277d1351df02a933272d38210/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
-113            android:name="androidx.window.extensions"
-113-->[androidx.window:window:1.0.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/59189e6277d1351df02a933272d38210/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
-114            android:required="false" />
-114-->[androidx.window:window:1.0.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/59189e6277d1351df02a933272d38210/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
-115        <uses-library
-115-->[androidx.window:window:1.0.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/59189e6277d1351df02a933272d38210/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
-116            android:name="androidx.window.sidecar"
-116-->[androidx.window:window:1.0.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/59189e6277d1351df02a933272d38210/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
-117            android:required="false" />
-117-->[androidx.window:window:1.0.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/59189e6277d1351df02a933272d38210/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
-118
-119        <receiver
-119-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
-120            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-120-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
-121            android:directBootAware="false"
-121-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
-122            android:enabled="true"
-122-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
-123            android:exported="true"
-123-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
-124            android:permission="android.permission.DUMP" >
-124-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
-125            <intent-filter>
-125-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
-126                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-126-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
-126-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
-127            </intent-filter>
-128            <intent-filter>
-128-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
-129                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-129-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
-129-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
-130            </intent-filter>
-131            <intent-filter>
-131-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
-132                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-132-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
-132-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
-133            </intent-filter>
-134            <intent-filter>
-134-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
-135                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-135-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
-135-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
-136            </intent-filter>
-137        </receiver>
-138    </application>
-139
-140</manifest>
+15    <permission
+15-->[androidx.core:core:1.13.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/7b9cda8b6acce3d705a391ac25d780c1/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
+16        android:name="com.example.tagalong.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+16-->[androidx.core:core:1.13.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/7b9cda8b6acce3d705a391ac25d780c1/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
+17        android:protectionLevel="signature" />
+17-->[androidx.core:core:1.13.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/7b9cda8b6acce3d705a391ac25d780c1/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
+18
+19    <uses-permission android:name="com.example.tagalong.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+19-->[androidx.core:core:1.13.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/7b9cda8b6acce3d705a391ac25d780c1/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
+19-->[androidx.core:core:1.13.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/7b9cda8b6acce3d705a391ac25d780c1/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
+20
+21    <application
+21-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:9:5-98:19
+22        android:allowBackup="true"
+22-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:10:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.13.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/7b9cda8b6acce3d705a391ac25d780c1/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
+24        android:dataExtractionRules="@xml/data_extraction_rules"
+24-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:11:9-65
+25        android:debuggable="true"
+26        android:extractNativeLibs="false"
+27        android:fullBackupContent="@xml/backup_rules"
+27-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:12:9-54
+28        android:icon="@mipmap/app_logo"
+28-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:13:9-40
+29        android:label="@string/app_name"
+29-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:14:9-41
+30        android:roundIcon="@mipmap/app_logo_round"
+30-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:15:9-51
+31        android:supportsRtl="true"
+31-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:16:9-35
+32        android:testOnly="true"
+33        android:theme="@style/Theme.TagAlong"
+33-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:17:9-46
+34        android:usesCleartextTraffic="true" >
+34-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:18:9-44
+35        <activity
+35-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:20:9-22:40
+36            android:name="com.example.tagalong.DriverNotRegistered"
+36-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:21:13-48
+37            android:exported="false" />
+37-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:22:13-37
+38        <activity
+38-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:23:9-25:40
+39            android:name="com.example.tagalong.OnBoarding.DriverOnBoarding"
+39-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:24:13-56
+40            android:exported="false" />
+40-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:25:13-37
+41        <activity
+41-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:26:9-28:40
+42            android:name="com.example.tagalong.OnBoarding.OnBoardingScreenTwo"
+42-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:27:13-59
+43            android:exported="false" />
+43-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:28:13-37
+44        <activity
+44-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:29:9-31:40
+45            android:name="com.example.tagalong.OnBoarding.OnboardingScreenOne"
+45-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:30:13-59
+46            android:exported="false" />
+46-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:31:13-37
+47        <activity
+47-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:32:9-34:40
+48            android:name="com.example.tagalong.Profile.ProfileChangeConfirmation"
+48-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:33:13-62
+49            android:exported="false" />
+49-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:34:13-37
+50        <activity
+50-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:35:9-37:40
+51            android:name="com.example.tagalong.BookARide.BookARideConfirmation"
+51-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:36:13-60
+52            android:exported="false" />
+52-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:37:13-37
+53        <activity
+53-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:38:9-40:40
+54            android:name="com.example.tagalong.StartRide.StartARideConfirmationPage"
+54-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:39:13-65
+55            android:exported="false" />
+55-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:40:13-37
+56        <activity
+56-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:41:9-43:40
+57            android:name="com.example.tagalong.JoinRide.ConfirmationOfRequestToJoin"
+57-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:42:13-65
+58            android:exported="false" />
+58-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:43:13-37
+59        <activity
+59-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:44:9-46:40
+60            android:name="com.example.tagalong.JoinRide.JoinARideDetails"
+60-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:45:13-54
+61            android:exported="false" />
+61-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:46:13-37
+62        <activity
+62-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:47:9-49:40
+63            android:name="com.example.tagalong.JoinRide.JoinRide"
+63-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:48:13-46
+64            android:exported="false" />
+64-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:49:13-37
+65        <activity
+65-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:50:9-52:40
+66            android:name="com.example.tagalong.BookARide.BookARide"
+66-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:51:13-48
+67            android:exported="false" />
+67-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:52:13-37
+68        <activity
+68-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:53:9-55:40
+69            android:name="com.example.tagalong.StartRide.StartARide"
+69-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:54:13-49
+70            android:exported="false" />
+70-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:55:13-37
+71        <activity
+71-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:56:9-58:40
+72            android:name="com.example.tagalong.Profile.Profile"
+72-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:57:13-44
+73            android:exported="false" />
+73-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:58:13-37
+74        <activity
+74-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:59:9-61:40
+75            android:name="com.example.tagalong.payments.PaymentsConfirmation"
+75-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:60:13-58
+76            android:exported="false" />
+76-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:61:13-37
+77        <activity
+77-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:62:9-64:40
+78            android:name="com.example.tagalong.payments.WalletDeposit"
+78-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:63:13-51
+79            android:exported="false" />
+79-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:64:13-37
+80        <activity
+80-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:65:9-67:40
+81            android:name="com.example.tagalong.payments.paymentConfirmationSuccess"
+81-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:66:13-64
+82            android:exported="false" />
+82-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:67:13-37
+83        <activity
+83-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:68:9-70:40
+84            android:name="com.example.tagalong.payments.PaymentInitialization"
+84-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:69:13-59
+85            android:exported="false" />
+85-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:70:13-37
+86        <activity
+86-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:71:9-73:40
+87            android:name="com.example.tagalong.home.HomeMain"
+87-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:72:13-42
+88            android:exported="false" />
+88-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:73:13-37
+89        <activity
+89-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:74:9-76:40
+90            android:name="com.example.tagalong.Authentication.sign_in"
+90-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:75:13-51
+91            android:exported="false" />
+91-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:76:13-37
+92        <activity
+92-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:77:9-79:40
+93            android:name="com.example.tagalong.Authentication.SignUp"
+93-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:78:13-50
+94            android:exported="false" />
+94-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:79:13-37
+95        <activity
+95-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:80:9-82:40
+96            android:name="com.example.tagalong.Authentication.ResetPasswordCode"
+96-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:81:13-61
+97            android:exported="false" />
+97-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:82:13-37
+98        <activity
+98-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:83:9-85:40
+99            android:name="com.example.tagalong.Authentication.ResetEmailConfirmation"
+99-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:84:13-66
+100            android:exported="false" />
+100-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:85:13-37
+101        <activity
+101-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:86:9-88:40
+102            android:name="com.example.tagalong.Verification.VerificationSuccess"
+102-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:87:13-61
+103            android:exported="false" />
+103-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:88:13-37
+104        <activity
+104-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:89:9-97:20
+105            android:name="com.example.tagalong.MainActivity"
+105-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:90:13-41
+106            android:exported="true" >
+106-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:91:13-36
+107            <intent-filter>
+107-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:92:13-96:29
+108                <action android:name="android.intent.action.MAIN" />
+108-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:93:17-69
+108-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:93:25-66
+109
+110                <category android:name="android.intent.category.LAUNCHER" />
+110-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:95:17-77
+110-->/home/rafeaaron/Desktop/Tag-Along-Mobile/app/src/main/AndroidManifest.xml:95:27-74
+111            </intent-filter>
+112        </activity>
+113
+114        <provider
+114-->[androidx.emoji2:emoji2:1.3.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/be92e0a2c60030e46e02e11ad6a237cd/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+115            android:name="androidx.startup.InitializationProvider"
+115-->[androidx.emoji2:emoji2:1.3.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/be92e0a2c60030e46e02e11ad6a237cd/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+116            android:authorities="com.example.tagalong.androidx-startup"
+116-->[androidx.emoji2:emoji2:1.3.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/be92e0a2c60030e46e02e11ad6a237cd/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+117            android:exported="false" >
+117-->[androidx.emoji2:emoji2:1.3.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/be92e0a2c60030e46e02e11ad6a237cd/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+118            <meta-data
+118-->[androidx.emoji2:emoji2:1.3.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/be92e0a2c60030e46e02e11ad6a237cd/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+119                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+119-->[androidx.emoji2:emoji2:1.3.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/be92e0a2c60030e46e02e11ad6a237cd/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+120                android:value="androidx.startup" />
+120-->[androidx.emoji2:emoji2:1.3.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/be92e0a2c60030e46e02e11ad6a237cd/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+121            <meta-data
+121-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/rafeaaron/.gradle/caches/8.10.2/transforms/1ccfb3b0868c1eb9532ca36254a91e6f/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+122                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+122-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/rafeaaron/.gradle/caches/8.10.2/transforms/1ccfb3b0868c1eb9532ca36254a91e6f/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+123                android:value="androidx.startup" />
+123-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/rafeaaron/.gradle/caches/8.10.2/transforms/1ccfb3b0868c1eb9532ca36254a91e6f/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+124            <meta-data
+124-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+125                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+125-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+126                android:value="androidx.startup" />
+126-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+127        </provider>
+128
+129        <uses-library
+129-->[androidx.window:window:1.0.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/59189e6277d1351df02a933272d38210/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+130            android:name="androidx.window.extensions"
+130-->[androidx.window:window:1.0.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/59189e6277d1351df02a933272d38210/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+131            android:required="false" />
+131-->[androidx.window:window:1.0.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/59189e6277d1351df02a933272d38210/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+132        <uses-library
+132-->[androidx.window:window:1.0.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/59189e6277d1351df02a933272d38210/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+133            android:name="androidx.window.sidecar"
+133-->[androidx.window:window:1.0.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/59189e6277d1351df02a933272d38210/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+134            android:required="false" />
+134-->[androidx.window:window:1.0.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/59189e6277d1351df02a933272d38210/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+135
+136        <receiver
+136-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+137            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+137-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+138            android:directBootAware="false"
+138-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+139            android:enabled="true"
+139-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+140            android:exported="true"
+140-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+141            android:permission="android.permission.DUMP" >
+141-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+142            <intent-filter>
+142-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+143                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+143-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+143-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+144            </intent-filter>
+145            <intent-filter>
+145-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+146                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+146-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+146-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+147            </intent-filter>
+148            <intent-filter>
+148-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+149                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+149-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+149-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+150            </intent-filter>
+151            <intent-filter>
+151-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+152                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+152-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+152-->[androidx.profileinstaller:profileinstaller:1.4.0] /home/rafeaaron/.gradle/caches/8.10.2/transforms/c6d774a3f3dafed2e43f12703a613054/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+153            </intent-filter>
+154        </receiver>
+155    </application>
+156
+157</manifest>

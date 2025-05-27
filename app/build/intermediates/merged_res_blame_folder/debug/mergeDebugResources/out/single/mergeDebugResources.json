@@ -28,12 +28,12 @@
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/drawable-xxhdpi/ic_start_a_ride.png"
     },
     {
-        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/drawable-xhdpi_ic_female_icon.png.flat",
-        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/drawable-xhdpi/ic_female_icon.png"
-    },
-    {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/drawable-xxxhdpi_home_icon.png.flat",
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/drawable-xxxhdpi/home_icon.png"
+    },
+    {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/drawable-xhdpi_ic_female_icon.png.flat",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/drawable-xhdpi/ic_female_icon.png"
     },
     {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/drawable_options_layout.xml.flat",
@@ -96,6 +96,10 @@
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/drawable-mdpi/verification.png"
     },
     {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/layout_activity_driver_on_boarding.xml.flat",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/activity_driver_on_boarding.xml"
+    },
+    {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/drawable-xxxhdpi_ic_booking_icon.png.flat",
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/drawable-xxxhdpi/ic_booking_icon.png"
     },
@@ -132,12 +136,12 @@
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/drawable-xxhdpi_ic_map_icon.png.flat",
-        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/drawable-xxhdpi/ic_map_icon.png"
-    },
-    {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/mipmap-hdpi_profile_picture.png.flat",
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/mipmap-hdpi/profile_picture.png"
+    },
+    {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/drawable-xxhdpi_ic_map_icon.png.flat",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/drawable-xxhdpi/ic_map_icon.png"
     },
     {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/drawable-xhdpi_ic_map_icon.png.flat",
@@ -210,10 +214,6 @@
     {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/mipmap-xxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.tagalong.app-debug-43:/layout_activity_reset_code.xml.flat",
-        "source": "com.example.tagalong.app-main-45:/layout/activity_reset_code.xml"
     },
     {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/mipmap-xhdpi_ic_debit_account.png.flat",
@@ -464,6 +464,10 @@
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/drawable-xhdpi/home_icon.png"
     },
     {
+        "merged": "com.example.tagalong.app-debug-43:/layout_activity_driver_not_registered.xml.flat",
+        "source": "com.example.tagalong.app-main-45:/layout/activity_driver_not_registered.xml"
+    },
+    {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/drawable-hdpi_ic_booking.png.flat",
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/drawable-hdpi/ic_booking.png"
     },
@@ -528,16 +532,20 @@
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/mipmap-mdpi/app_logo.webp"
     },
     {
-        "merged": "com.example.tagalong.app-debug-43:/layout_activity_sign_in.xml.flat",
-        "source": "com.example.tagalong.app-main-45:/layout/activity_sign_in.xml"
-    },
-    {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/layout_verification_confirmation.xml.flat",
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/verification_confirmation.xml"
     },
     {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/layout_activity_on_boarding_screen_two.xml.flat",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/activity_on_boarding_screen_two.xml"
+    },
+    {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/drawable-xxxhdpi_ic_female_icon.png.flat",
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/drawable-xxxhdpi/ic_female_icon.png"
+    },
+    {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/layout_activity_onboarding_screen_one.xml.flat",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/activity_onboarding_screen_one.xml"
     },
     {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/layout_passenger_abstract.xml.flat",
@@ -596,6 +604,10 @@
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/fragment_booking.xml"
     },
     {
+        "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/layout_activity_driver_not_registered.xml.flat",
+        "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/activity_driver_not_registered.xml"
+    },
+    {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/mipmap-anydpi-v26_app_logo_round.xml.flat",
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/mipmap-anydpi-v26/app_logo_round.xml"
     },
@@ -646,10 +658,6 @@
     {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/layout_payment_view.xml.flat",
         "source": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-main-45:/layout/payment_view.xml"
-    },
-    {
-        "merged": "com.example.tagalong.app-debug-43:/layout_activity_sign_up.xml.flat",
-        "source": "com.example.tagalong.app-main-45:/layout/activity_sign_up.xml"
     },
     {
         "merged": "/home/rafeaaron/.gradle/daemon/8.10.2/com.example.tagalong.app-debug-43:/drawable-mdpi_back_arrow.png.flat",

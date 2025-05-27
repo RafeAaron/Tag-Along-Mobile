@@ -44,7 +44,7 @@
 
         />
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -57,7 +57,7 @@
         android:fontFamily="@font/sfprodisplayregular"
         android:text="5400"
         android:textSize="40sp"
-        android:editable="true"
+        android:hint="5400"
 
         />
 
@@ -131,18 +131,6 @@
             android:textFontWeight="500"
 
             />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:id="@+id/paypalAccountName"
-
-            android:text="Pay Pal"
-            android:fontFamily="@font/sfprodisplayregular"
-            android:textFontWeight="500"
-
-            />
     </RadioGroup>
 
     <TextView
@@ -183,6 +171,8 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
 
+        android:id="@+id/depositInitiate"
+
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -196,7 +186,6 @@
         android:textSize="20sp"
         android:fontFamily="@font/sfprodisplayregular"
         android:textFontWeight="600"
-        android:onClick="goToDepositIntoWalletConfirmation"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

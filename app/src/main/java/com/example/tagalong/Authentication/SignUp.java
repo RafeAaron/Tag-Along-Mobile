@@ -2,9 +2,11 @@ package com.example.tagalong.Authentication;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +14,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.tagalong.OnBoarding.OnBoardingScreenTwo;
 import com.example.tagalong.R;
 import com.example.tagalong.home.HomeMain;
 
@@ -53,7 +56,21 @@ public class SignUp  extends AppCompatActivity {
                     userConfirmedPassword to handle the user's confirmed password
                  */
 
-                goToHomePage();
+                if(userPassword.getText().toString().length() < 8)
+                {
+                    Log.e("Sign Up Error", "Password must be 8 characters or more");
+                    Toast.makeText(SignUp.this, "Password must be 8 characters or more", Toast.LENGTH_SHORT).show();
+                }else if(!userPassword.getText().toString().contentEquals(userConfirmedPassword.getText().toString()))
+                {
+                    Log.e("Sign Up Error", "Password must match Confirmed Password");
+                    Toast.makeText(SignUp.this, "Password must match Confirmed Password", Toast.LENGTH_SHORT).show();
+                }else if(userName.getText().toString().isEmpty() || userEmail.getText().toString().isEmpty() || userPassword.getText().toString().isEmpty())
+                {
+                    Log.e("Sign Up Error", "Please enter all relevant details");
+                    Toast.makeText(SignUp.this, "Please enter all details", Toast.LENGTH_SHORT).show();
+                }else{
+                    goToNextPage(userName.getText().toString(), userEmail.getText().toString(), userPassword.getText().toString());
+                }
             }
         });
 
@@ -66,10 +83,13 @@ public class SignUp  extends AppCompatActivity {
         finish();
     }
 
-    public void goToHomePage()
+    public void goToNextPage(String name, String email, String password)
     {
-        Intent goToHomePageIntent = new Intent(this, HomeMain.class);
-        startActivity(goToHomePageIntent);
+        Intent goToNextIntent = new Intent(this, OnBoardingScreenTwo.class);
+        goToNextIntent.putExtra("name", name);
+        goToNextIntent.putExtra("email", email);
+        goToNextIntent.putExtra("password", password);
+        startActivity(goToNextIntent);
         finish();
     }
 

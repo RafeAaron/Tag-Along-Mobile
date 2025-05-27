@@ -2,6 +2,7 @@ package com.example.tagalong.JoinRide;
 
 import com.example.tagalong.R;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -11,12 +12,51 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.Objects;
+
 public class JoinARideDetailsAdapter extends RecyclerView.Adapter<JoinARideDetailsAdapter.JoinARideDetailsViewHolder> {
 
-    String[] passengers = { "Rafe Aaron", "Braxton Killmonger", "Ritah Stone"};
-    String[] ageOfPassengers = {"43", "26", "27"};
+    String[] passengers;
+    String[] ageOfPassengers;
 
-    String[] genderOfPassengers = {"Male", "Male", "Female"};
+    String[] genderOfPassengers;
+    int number = 0;
+
+    public JoinARideDetailsAdapter(JSONObject object)
+    {
+
+        if(Objects.equals("{}", object.toString())){
+            this.passengers = new String[0];
+            this.ageOfPassengers = new String[0];
+            this.genderOfPassengers = new String[0];
+        }else
+        {
+            this.passengers = new String[object.names().length()];
+            this.ageOfPassengers = new String[object.names().length()];
+            this.genderOfPassengers = new String[object.names().length()];
+
+            for(int i = 0; i < object.names().length(); i++)
+            {
+                try {
+
+                    Log.i("Success", object.get("" + i).toString());
+                    JSONObject detail = new JSONObject(object.get("" + i).toString());
+
+                    this.passengers[i] = detail.getString("first_name") + " " + detail.getString("last_name");
+                    this.ageOfPassengers[i] = detail.get("age").toString();
+                    this.genderOfPassengers[i] = detail.getString("gender");
+                    this.number++;
+
+                } catch (JSONException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }
+    }
 
     public static class JoinARideDetailsViewHolder extends RecyclerView.ViewHolder
     {
@@ -47,7 +87,7 @@ public class JoinARideDetailsAdapter extends RecyclerView.Adapter<JoinARideDetai
     @Override
     public void onBindViewHolder(@NonNull JoinARideDetailsAdapter.JoinARideDetailsViewHolder holder, int position) {
 
-        if(this.genderOfPassengers[position] == "Male")
+        if(Objects.equals(genderOfPassengers[position], "Male"))
         {
             holder.passengerGender.setImageResource(R.drawable.ic_profile_icon);
             holder.nameOfPassenger.setText(this.passengers[position]);
@@ -63,6 +103,6 @@ public class JoinARideDetailsAdapter extends RecyclerView.Adapter<JoinARideDetai
 
     @Override
     public int getItemCount() {
-        return passengers.length;
+        return this.number;
     }
 }

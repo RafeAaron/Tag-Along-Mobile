@@ -25,6 +25,12 @@ public final class ActivitySignInBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
+  public final TextView passwordErrorMessage;
+
+  @NonNull
+  public final TextView passwordTextHint;
+
+  @NonNull
   public final Button signInBtn;
 
   @NonNull
@@ -39,16 +45,28 @@ public final class ActivitySignInBinding implements ViewBinding {
   @NonNull
   public final EditText username;
 
+  @NonNull
+  public final TextView usernameErrorMessage;
+
+  @NonNull
+  public final TextView usernameTextHint;
+
   private ActivitySignInBinding(@NonNull ConstraintLayout rootView, @NonNull ConstraintLayout main,
+      @NonNull TextView passwordErrorMessage, @NonNull TextView passwordTextHint,
       @NonNull Button signInBtn, @NonNull TextView signInHeading, @NonNull EditText signInPassword,
-      @NonNull TextView signInSub, @NonNull EditText username) {
+      @NonNull TextView signInSub, @NonNull EditText username,
+      @NonNull TextView usernameErrorMessage, @NonNull TextView usernameTextHint) {
     this.rootView = rootView;
     this.main = main;
+    this.passwordErrorMessage = passwordErrorMessage;
+    this.passwordTextHint = passwordTextHint;
     this.signInBtn = signInBtn;
     this.signInHeading = signInHeading;
     this.signInPassword = signInPassword;
     this.signInSub = signInSub;
     this.username = username;
+    this.usernameErrorMessage = usernameErrorMessage;
+    this.usernameTextHint = usernameTextHint;
   }
 
   @Override
@@ -80,6 +98,18 @@ public final class ActivitySignInBinding implements ViewBinding {
     missingId: {
       ConstraintLayout main = (ConstraintLayout) rootView;
 
+      id = R.id.passwordErrorMessage;
+      TextView passwordErrorMessage = ViewBindings.findChildViewById(rootView, id);
+      if (passwordErrorMessage == null) {
+        break missingId;
+      }
+
+      id = R.id.passwordTextHint;
+      TextView passwordTextHint = ViewBindings.findChildViewById(rootView, id);
+      if (passwordTextHint == null) {
+        break missingId;
+      }
+
       id = R.id.signInBtn;
       Button signInBtn = ViewBindings.findChildViewById(rootView, id);
       if (signInBtn == null) {
@@ -110,8 +140,21 @@ public final class ActivitySignInBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySignInBinding((ConstraintLayout) rootView, main, signInBtn, signInHeading,
-          signInPassword, signInSub, username);
+      id = R.id.usernameErrorMessage;
+      TextView usernameErrorMessage = ViewBindings.findChildViewById(rootView, id);
+      if (usernameErrorMessage == null) {
+        break missingId;
+      }
+
+      id = R.id.usernameTextHint;
+      TextView usernameTextHint = ViewBindings.findChildViewById(rootView, id);
+      if (usernameTextHint == null) {
+        break missingId;
+      }
+
+      return new ActivitySignInBinding((ConstraintLayout) rootView, main, passwordErrorMessage,
+          passwordTextHint, signInBtn, signInHeading, signInPassword, signInSub, username,
+          usernameErrorMessage, usernameTextHint);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

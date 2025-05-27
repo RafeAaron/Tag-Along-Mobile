@@ -34,9 +34,6 @@ public final class ActivityHomeMainBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
-  public final ImageButton mapIcon;
-
-  @NonNull
   public final LinearLayout navigationDrawer;
 
   @NonNull
@@ -47,7 +44,7 @@ public final class ActivityHomeMainBinding implements ViewBinding {
 
   private ActivityHomeMainBinding(@NonNull ConstraintLayout rootView,
       @NonNull ImageButton bookingIcon, @NonNull FrameLayout fragmentHolder,
-      @NonNull ImageButton homeIcon, @NonNull ConstraintLayout main, @NonNull ImageButton mapIcon,
+      @NonNull ImageButton homeIcon, @NonNull ConstraintLayout main,
       @NonNull LinearLayout navigationDrawer, @NonNull ImageButton paymentIcon,
       @NonNull ImageButton verificationIcon) {
     this.rootView = rootView;
@@ -55,7 +52,6 @@ public final class ActivityHomeMainBinding implements ViewBinding {
     this.fragmentHolder = fragmentHolder;
     this.homeIcon = homeIcon;
     this.main = main;
-    this.mapIcon = mapIcon;
     this.navigationDrawer = navigationDrawer;
     this.paymentIcon = paymentIcon;
     this.verificationIcon = verificationIcon;
@@ -108,12 +104,6 @@ public final class ActivityHomeMainBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
-      id = R.id.mapIcon;
-      ImageButton mapIcon = ViewBindings.findChildViewById(rootView, id);
-      if (mapIcon == null) {
-        break missingId;
-      }
-
       id = R.id.navigationDrawer;
       LinearLayout navigationDrawer = ViewBindings.findChildViewById(rootView, id);
       if (navigationDrawer == null) {
@@ -133,7 +123,7 @@ public final class ActivityHomeMainBinding implements ViewBinding {
       }
 
       return new ActivityHomeMainBinding((ConstraintLayout) rootView, bookingIcon, fragmentHolder,
-          homeIcon, main, mapIcon, navigationDrawer, paymentIcon, verificationIcon);
+          homeIcon, main, navigationDrawer, paymentIcon, verificationIcon);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

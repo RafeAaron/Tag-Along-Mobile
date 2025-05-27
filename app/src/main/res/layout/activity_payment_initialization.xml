@@ -179,7 +179,6 @@
         android:text="Confirm Payment"
         android:background="@drawable/button_shape"
 
-        android:onClick="goToPaymentSucessFromInitialization"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

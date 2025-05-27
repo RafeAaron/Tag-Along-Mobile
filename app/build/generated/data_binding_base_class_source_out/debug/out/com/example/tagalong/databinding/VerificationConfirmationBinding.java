@@ -24,6 +24,21 @@ public final class VerificationConfirmationBinding implements ViewBinding {
   public final ImageView backArrowVerification;
 
   @NonNull
+  public final TextView carColor;
+
+  @NonNull
+  public final TextView carModel;
+
+  @NonNull
+  public final TextView carNumberPlate;
+
+  @NonNull
+  public final TextView carType;
+
+  @NonNull
+  public final TextView driverContact;
+
+  @NonNull
   public final TextView verificationConfirmationHeading;
 
   @NonNull
@@ -33,11 +48,18 @@ public final class VerificationConfirmationBinding implements ViewBinding {
   public final ImageView verifiedProfilePicture;
 
   private VerificationConfirmationBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView backArrowVerification, @NonNull TextView verificationConfirmationHeading,
+      @NonNull ImageView backArrowVerification, @NonNull TextView carColor,
+      @NonNull TextView carModel, @NonNull TextView carNumberPlate, @NonNull TextView carType,
+      @NonNull TextView driverContact, @NonNull TextView verificationConfirmationHeading,
       @NonNull ConstraintLayout verificationConfirmationMain,
       @NonNull ImageView verifiedProfilePicture) {
     this.rootView = rootView;
     this.backArrowVerification = backArrowVerification;
+    this.carColor = carColor;
+    this.carModel = carModel;
+    this.carNumberPlate = carNumberPlate;
+    this.carType = carType;
+    this.driverContact = driverContact;
     this.verificationConfirmationHeading = verificationConfirmationHeading;
     this.verificationConfirmationMain = verificationConfirmationMain;
     this.verifiedProfilePicture = verifiedProfilePicture;
@@ -76,6 +98,36 @@ public final class VerificationConfirmationBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.car_color;
+      TextView carColor = ViewBindings.findChildViewById(rootView, id);
+      if (carColor == null) {
+        break missingId;
+      }
+
+      id = R.id.car_model;
+      TextView carModel = ViewBindings.findChildViewById(rootView, id);
+      if (carModel == null) {
+        break missingId;
+      }
+
+      id = R.id.car_number_plate;
+      TextView carNumberPlate = ViewBindings.findChildViewById(rootView, id);
+      if (carNumberPlate == null) {
+        break missingId;
+      }
+
+      id = R.id.car_type;
+      TextView carType = ViewBindings.findChildViewById(rootView, id);
+      if (carType == null) {
+        break missingId;
+      }
+
+      id = R.id.driver_contact;
+      TextView driverContact = ViewBindings.findChildViewById(rootView, id);
+      if (driverContact == null) {
+        break missingId;
+      }
+
       id = R.id.verificationConfirmationHeading;
       TextView verificationConfirmationHeading = ViewBindings.findChildViewById(rootView, id);
       if (verificationConfirmationHeading == null) {
@@ -91,6 +143,7 @@ public final class VerificationConfirmationBinding implements ViewBinding {
       }
 
       return new VerificationConfirmationBinding((ConstraintLayout) rootView, backArrowVerification,
+          carColor, carModel, carNumberPlate, carType, driverContact,
           verificationConfirmationHeading, verificationConfirmationMain, verifiedProfilePicture);
     }
     String missingId = rootView.getResources().getResourceName(id);

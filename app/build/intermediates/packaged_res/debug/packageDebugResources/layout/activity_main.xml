@@ -54,6 +54,7 @@
 
         android:fontFamily="@font/sfprodisplaymedium"
         android:onClick="nextPage"
+        android:enabled="false"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

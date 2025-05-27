@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnBoarding.OnBoardingScreenTwo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Almost Done"
+                android:textSize="32sp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/sfprodisplayregular"
+                android:textFontWeight="700"
+                />
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:textSize="16sp"
+                android:fontFamily="@font/sfprodisplayregular"
+                android:textFontWeight="600"
+                android:layout_marginLeft="20dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:id="@+id/onboardingScreenTwoFirstName"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="16sp"
+                android:hint="Example"
+                android:paddingLeft="20dp"
+                android:fontFamily="@font/sfprodisplayregular"
+                android:textFontWeight="500"/>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:textSize="16sp"
+                android:fontFamily="@font/sfprodisplayregular"
+                android:textFontWeight="600"
+                android:layout_marginLeft="20dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:id="@+id/onboardingScreenTwoLastName"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="16sp"
+                android:hint="Name"
+                android:paddingLeft="20sp"
+                android:fontFamily="@font/sfprodisplayregular"
+                android:textFontWeight="500"/>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textSize="16sp"
+                android:fontFamily="@font/sfprodisplayregular"
+                android:textFontWeight="600"
+                android:layout_marginLeft="20dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:inputType="number"
+                android:id="@+id/onboardingScreenTwoAge"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="16sp"
+                android:hint="17"
+                android:paddingLeft="20sp"
+                android:fontFamily="@font/sfprodisplayregular"
+                android:textFontWeight="500"/>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textSize="16sp"
+                android:fontFamily="@font/sfprodisplayregular"
+                android:textFontWeight="600"
+                android:layout_marginLeft="20dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:id="@+id/onboardingScreenTwoGender"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_border"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="16sp"
+                android:hint="Male"
+                android:paddingLeft="20sp"
+                android:fontFamily="@font/sfprodisplayregular"
+                android:textFontWeight="500"/>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is your main aim of using this app"
+                android:textSize="16sp"
+                android:fontFamily="@font/sfprodisplayregular"
+                android:textFontWeight="600"
+                android:layout_marginLeft="20dp"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/userRole">
+
+                <RadioButton
+                    android:id="@+id/driver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I am Driver"
+                    android:fontFamily="@font/sfprodisplayregular"
+                    android:textFontWeight="500"
+                    android:textSize="16sp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/traveller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I am Traveller"
+                    android:fontFamily="@font/sfprodisplayregular"
+                    android:textFontWeight="500"
+                    android:textSize="16sp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/both"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Both"
+                    android:fontFamily="@font/sfprodisplayregular"
+                    android:textFontWeight="500"
+                    android:textSize="16sp"
+                    />
+            </RadioGroup>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="52dp"
+
+                android:id="@+id/onboardingScreenTwoFinish"
+                android:text="Finish"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/sfprodisplayregular"
+                android:textFontWeight="600"
+
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

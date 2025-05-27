@@ -167,11 +167,13 @@
         android:textFontWeight="500"
         />
 
-    <TextClock
+    <TimePicker
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
         android:id="@+id/timeText"
+
+        android:timePickerMode="spinner"
 
         app:layout_constraintTop_toBottomOf="@id/pickUpTimeHeading"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -186,6 +188,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="52dp"
+
+        android:id="@+id/bookARideBtn"
 
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
@@ -202,7 +206,6 @@
         android:textFontWeight="600"
         android:textSize="16sp"
 
-        android:onClick="goToBookingConfirmation"
         />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

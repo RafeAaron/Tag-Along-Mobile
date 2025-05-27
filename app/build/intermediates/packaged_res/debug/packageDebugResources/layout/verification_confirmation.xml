@@ -58,6 +58,7 @@
         />
 
     <LinearLayout
+        android:gravity="center_horizontal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -75,7 +76,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:text="Car Type: Mercedes Benz"
+            android:id="@+id/car_type"
+
+            android:text="Car Type: N/A"
+            android:textSize="20sp"
+            android:fontFamily="@font/sfprodisplayregular"
+            android:textFontWeight="500"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/car_color"
+
+            android:text="Color: N/A"
             android:textSize="20sp"
             android:fontFamily="@font/sfprodisplayregular"
             android:textFontWeight="500"
@@ -87,7 +103,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
 
-            android:text="Car Model: 2024"
+            android:id="@+id/car_model"
+
+            android:text="Model: N/A"
             android:textSize="20sp"
             android:fontFamily="@font/sfprodisplayregular"
             android:textFontWeight="500"
@@ -99,7 +117,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
 
-            android:text="Make: Roofless"
+            android:id="@+id/car_number_plate"
+
+            android:text="Plate Number: N/A"
             android:textSize="20sp"
             android:fontFamily="@font/sfprodisplayregular"
             android:textFontWeight="500"
@@ -111,31 +131,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
 
-            android:text="Rating: 3.8"
-            android:textSize="20sp"
-            android:fontFamily="@font/sfprodisplayregular"
-            android:textFontWeight="500"
+            android:id="@+id/driver_contact"
 
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-
-            android:text="Number Of Bookings: 383"
-            android:textSize="20sp"
-            android:fontFamily="@font/sfprodisplayregular"
-            android:textFontWeight="500"
-
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-
-            android:text="Plate Number: UAR 594R"
+            android:text="Contact: N/A"
             android:textSize="20sp"
             android:fontFamily="@font/sfprodisplayregular"
             android:textFontWeight="500"

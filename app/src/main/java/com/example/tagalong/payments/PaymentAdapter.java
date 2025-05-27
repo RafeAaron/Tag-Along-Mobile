@@ -10,21 +10,60 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.tagalong.R;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class PaymentAdapter extends RecyclerView.Adapter<PaymentAdapter.PaymentViewHolder> {
 
-    String[] paymentDetails = {"Day one", "Day Two", "Day Three"};
+    String[] paymentDetails;
+    String[] recieverID;
+
+    String[] dates;
+    String[] amounts;
     public static class PaymentViewHolder extends RecyclerView.ViewHolder{
 
-        public TextView txtView;
+        public TextView transferView;
+        public TextView recieverIDView;
+        public TextView dateView;
+        public TextView amountView;
         public PaymentViewHolder(View view)
         {
             super(view);
-            txtView = (TextView) view.findViewById(R.id.transferReason);
+            transferView = (TextView) view.findViewById(R.id.transferReason);
+            recieverIDView = (TextView) view.findViewById(R.id.recieverDetailss);
+            dateView = (TextView) view.findViewById(R.id.dateOfTransfer);
+            amountView = (TextView) view.findViewById(R.id.transferAmount);
         }
 
         public TextView getTextView() {
-            return txtView;
+            return transferView;
         }
+    }
+
+    public PaymentAdapter(JSONObject jsonObject)
+    {
+
+        try {
+            JSONArray arr = jsonObject.getJSONArray("Payments");
+
+            this.paymentDetails = new String[arr.length()];
+            this.recieverID = new String[arr.length()];
+            this.amounts = new String[arr.length()];
+            this.dates = new String[arr.length()];
+
+            for(int a = 0; a < arr.length(); a++)
+            {
+                paymentDetails[a] ="Reason: " + arr.getJSONObject(a).get("reason").toString();
+                recieverID[a] = "Reciever id: " + arr.getJSONObject(a).get("recieverID").toString();
+                amounts[a] = "UGX: " + arr.getJSONObject(a).get("amount").toString();
+                dates[a] = arr.getJSONObject(a).get("dateCompleted").toString();
+            }
+
+        } catch (JSONException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
     @NonNull
@@ -40,7 +79,10 @@ public class PaymentAdapter extends RecyclerView.Adapter<PaymentAdapter.PaymentV
     public void onBindViewHolder(@NonNull PaymentViewHolder holder, int position) {
 
         //Attach details to views
-        holder.getTextView().setText(paymentDetails[position]);
+        holder.amountView.setText(amounts[position]);
+        holder.dateView.setText(dates[position]);
+        holder.recieverIDView.setText(recieverID[position]);
+        holder.transferView.setText(paymentDetails[position]);
 
     }
 

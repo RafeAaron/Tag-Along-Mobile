@@ -37,6 +37,9 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final RecyclerView currentTripsInProgressList;
 
   @NonNull
+  public final TextView driverNameOnTrip;
+
+  @NonNull
   public final LinearLayout joinARide;
 
   @NonNull
@@ -46,7 +49,16 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final TextView optionsToDoTodayHeading;
 
   @NonNull
+  public final TextView passengerCount;
+
+  @NonNull
   public final ImageView profilePictureButton;
+
+  @NonNull
+  public final TextView rideNumber;
+
+  @NonNull
+  public final TextView routeETA;
 
   @NonNull
   public final ScrollView scrollViewHomeContent;
@@ -59,19 +71,25 @@ public final class FragmentHomeBinding implements ViewBinding {
 
   private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull LinearLayout bookARide,
       @NonNull TextView currentLocationHeading, @NonNull TextView currentTripsInProgressHeading,
-      @NonNull RecyclerView currentTripsInProgressList, @NonNull LinearLayout joinARide,
-      @NonNull HorizontalScrollView optionsToDoToday, @NonNull TextView optionsToDoTodayHeading,
-      @NonNull ImageView profilePictureButton, @NonNull ScrollView scrollViewHomeContent,
+      @NonNull RecyclerView currentTripsInProgressList, @NonNull TextView driverNameOnTrip,
+      @NonNull LinearLayout joinARide, @NonNull HorizontalScrollView optionsToDoToday,
+      @NonNull TextView optionsToDoTodayHeading, @NonNull TextView passengerCount,
+      @NonNull ImageView profilePictureButton, @NonNull TextView rideNumber,
+      @NonNull TextView routeETA, @NonNull ScrollView scrollViewHomeContent,
       @NonNull LinearLayout startARide, @NonNull TextView welcomeHeading) {
     this.rootView = rootView;
     this.bookARide = bookARide;
     this.currentLocationHeading = currentLocationHeading;
     this.currentTripsInProgressHeading = currentTripsInProgressHeading;
     this.currentTripsInProgressList = currentTripsInProgressList;
+    this.driverNameOnTrip = driverNameOnTrip;
     this.joinARide = joinARide;
     this.optionsToDoToday = optionsToDoToday;
     this.optionsToDoTodayHeading = optionsToDoTodayHeading;
+    this.passengerCount = passengerCount;
     this.profilePictureButton = profilePictureButton;
+    this.rideNumber = rideNumber;
+    this.routeETA = routeETA;
     this.scrollViewHomeContent = scrollViewHomeContent;
     this.startARide = startARide;
     this.welcomeHeading = welcomeHeading;
@@ -128,6 +146,12 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.driverNameOnTrip;
+      TextView driverNameOnTrip = ViewBindings.findChildViewById(rootView, id);
+      if (driverNameOnTrip == null) {
+        break missingId;
+      }
+
       id = R.id.joinARide;
       LinearLayout joinARide = ViewBindings.findChildViewById(rootView, id);
       if (joinARide == null) {
@@ -146,9 +170,27 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.passengerCount;
+      TextView passengerCount = ViewBindings.findChildViewById(rootView, id);
+      if (passengerCount == null) {
+        break missingId;
+      }
+
       id = R.id.profilePictureButton;
       ImageView profilePictureButton = ViewBindings.findChildViewById(rootView, id);
       if (profilePictureButton == null) {
+        break missingId;
+      }
+
+      id = R.id.rideNumber;
+      TextView rideNumber = ViewBindings.findChildViewById(rootView, id);
+      if (rideNumber == null) {
+        break missingId;
+      }
+
+      id = R.id.routeETA;
+      TextView routeETA = ViewBindings.findChildViewById(rootView, id);
+      if (routeETA == null) {
         break missingId;
       }
 
@@ -171,9 +213,9 @@ public final class FragmentHomeBinding implements ViewBinding {
       }
 
       return new FragmentHomeBinding((ConstraintLayout) rootView, bookARide, currentLocationHeading,
-          currentTripsInProgressHeading, currentTripsInProgressList, joinARide, optionsToDoToday,
-          optionsToDoTodayHeading, profilePictureButton, scrollViewHomeContent, startARide,
-          welcomeHeading);
+          currentTripsInProgressHeading, currentTripsInProgressList, driverNameOnTrip, joinARide,
+          optionsToDoToday, optionsToDoTodayHeading, passengerCount, profilePictureButton,
+          rideNumber, routeETA, scrollViewHomeContent, startARide, welcomeHeading);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

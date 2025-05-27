@@ -4,6 +4,7 @@ package com.example.tagalong.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -21,14 +22,19 @@ public final class FragmentVerificationBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button btnVerification;
+
+  @NonNull
   public final EditText editTextVerification;
 
   @NonNull
   public final TextView verificationHeading;
 
   private FragmentVerificationBinding(@NonNull ConstraintLayout rootView,
-      @NonNull EditText editTextVerification, @NonNull TextView verificationHeading) {
+      @NonNull Button btnVerification, @NonNull EditText editTextVerification,
+      @NonNull TextView verificationHeading) {
     this.rootView = rootView;
+    this.btnVerification = btnVerification;
     this.editTextVerification = editTextVerification;
     this.verificationHeading = verificationHeading;
   }
@@ -60,6 +66,12 @@ public final class FragmentVerificationBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnVerification;
+      Button btnVerification = ViewBindings.findChildViewById(rootView, id);
+      if (btnVerification == null) {
+        break missingId;
+      }
+
       id = R.id.editTextVerification;
       EditText editTextVerification = ViewBindings.findChildViewById(rootView, id);
       if (editTextVerification == null) {
@@ -72,8 +84,8 @@ public final class FragmentVerificationBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentVerificationBinding((ConstraintLayout) rootView, editTextVerification,
-          verificationHeading);
+      return new FragmentVerificationBinding((ConstraintLayout) rootView, btnVerification,
+          editTextVerification, verificationHeading);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
